@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Леонов](https://up.htmlacademy.ru/adaptive/14/user/320725).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Рашкован](https://htmlacademy.ru/profile/id196306).
 
 ---
 
