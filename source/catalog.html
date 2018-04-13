@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открытие меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <button class="main_navigation__close"type="button">x</button>
+      </nav>
+    </header>
+    <main class="catalog-page">
+      <div class="catalog-page__header">
+        <h1 class="catalog-page__head">Каталог товаров</h1>
+      </div>
+      <section class="catalog-page__items catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <img class="catalog__item--image" width="260" height="190" alt="Зайчик-попрыгайчик" src="">
+            <h3 class="catalog__item--head">Зайчик-попрыгайчик</h3>
+            <p class="catalog__item--info">Рост 30 см, вес 200 г</p>
+            <p class="catalog__item--price">1 200 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__item--image" width="260" height="190" alt="Корзинка для белья" src="">
+            <h3 class="catalog__item--head">Корзинка для белья</h3>
+            <p class="catalog__item--info">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__item--price">690 руб.</p>
+          </li>
+          <li class="catalog__item">
+            <img class="catalog__item--image" width="260" height="190" alt="Большая корзинка для игрушек" src="">
+            <h3 class="catalog__item--head">Большая корзинка для игрушек</h3>
+            <p class="catalog__item--info">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__item--price">1 500 руб.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__head">Процесс производства</h2>
+        <img class="video__video" width="260" height="150" alt="Видео процесса производства" src="#">
+        <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="#" class="button video__button">Сделать заказ</a>
+      </section>
+      <footer class="main-footer">
+        <div class="main-footer__social social-list">
+          <a href="#" class="social-list__item instagram">Instagram</a>
+          <a href="#" class="social-list__item facebook">Facebook</a>
+          <a href="#" class="social-list__item twitter">Twitter</a>
+        </div>
+        <div class="main-footer__html-academy html-academy">
+          <p class="html-academy__head">Разработано</p>
+          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">Html-academy</a>
+        </div>
+      </footer>
+      <section class="modal-cart">
+        <h3 class="modal-cart__header">Добавить в корзину</h3>
+        <p class="modal-cart__type">Выберите размер:</p>
+        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form form">
+          <input type="radio" class="visually-hidden" id="S-size" name="cart">
+          <input type="radio" class="visually-hidden" id="M-size" name="cart">
+          <input type="radio" class="visually-hidden" id="L-size" name="cart">
+          <div class="form-controls">
+            <label class="form-controls__item form-controls__item--S" for="S-size">S</label>
+            <label class="form-controls__item form-controls__item--M" for="M-size">M</label>
+            <label class="form-controls__item form-controls__item--L" for="L-size">L</label>
+          </div>
+          <button type="submit" class="button modal-cart__button">Добавить</button>
+        </form>
+      </section>
+    </main>
