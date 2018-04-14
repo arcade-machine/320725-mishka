@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img class="header__logo-image" src="/placeholder.jpg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">Открытие меню</button>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <button class="main_navigation__close" type="button">x</button>
+      </nav>
+    </header>
+    <main class="form-page">
+      <div class="form-page__header">
+        <h1 class="form-page__head">Вязание на заказ</h1>
+      </div>
+      <section class="custom">
+        <h2 class="visually-hidden">Составление заявки на вязание</h2>
+        <p class="custom__top">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="custom__form custom-making">
+          <fieldset class="custom-making__type type-form">
+            <legend class="form__head type-form__head">Тип</legend>
+            <input class="visually-hidden" type="radio" id="accessory" name="type" value="accessory" checked>
+            <input class="visually-hidden" type="radio" id="toy" name="type" value="toy">
+            <div class="type-form__controls type-controls">
+              <label class="type-controls__item type-controls__item--accessory" for="accessory">Аксессуар для интерьера</label>
+              <label class="type-controls__item type-controls__item--toy" for="toy">Детская игрушка</label>
+            </div>
+          </fieldset>
+          <fieldset class="custom-making__color color-form">
+            <legend class="form__head color-form__head">Цвет</legend>
+            <input class="visually-hidden" type="checkbox" id="white" name="color" value="white" checked>
+            <input class="visually-hidden" type="checkbox" id="grey" name="color" value="grey" checked>
+            <input class="visually-hidden" type="checkbox" id="tiffany" name="color" value="tiffany">
+            <input class="visually-hidden" type="checkbox" id="black" name="color" value="black">
+            <input class="visually-hidden" type="checkbox" id="pink" name="color" value="pink">
+            <input class="visually-hidden" type="checkbox" id="orange" name="color" value="orange">
+            <div class="color-form__controls color-controls">
+              <label class="color-controls__item color-controls__item--white" for="white">Белый</label>
+              <label class="color-controls__item color-controls__item--grey" for="grey">Серый</label>
+              <label class="color-controls__item color-controls__item--tiffany" for="tiffany">«Тиффани»</label>
+              <label class="color-controls__item color-controls__item--black" for="black">Черный</label>
+              <label class="color-controls__item color-controls__item--pink" for="pink">Розовый</label>
+              <label class="color-controls__item color-controls__item--pink" for="orange">Оранжевый</label>
+            </div>            
+          </fieldset>
+          <fieldset class="custom-making__full-name full-name-form">
+            <legend class="form__head full-name-form__head">ФИО</legend>
+            <label class="form__head full-name-form__name" for="name">Имя:</label>
+            <input class="form__input full-name-form__name--input" type="text" id="name" placeholder="Введите ваше имя*" required>
+            <label class="form__head full-name-form__surname" for="surname">Фамилия:</label>
+            <input class="form__input full-name-form__surname--input" type="text" id="surname" placeholder="Укажите фамилию*" required>
+            <label class="form__head full-name-form__patronymic" for="patronymic">Отчество:</label>
+            <input class="form__input full-name-form__patronymic--input" type="text" id="patronymic" placeholder="Отчество, если желаете">
+          </fieldset>
+          <fieldset class="custom-making__telephone telephone-form">
+            <legend class="form__head telephone-form__head">Тел</legend>
+            <div class="telephone-form__wrapper">
+              <input class="form__input telephone-form--input" type="tel" id="telephone" placeholder="+7 ХХХ ХХ ХХ*" required>
+            </div>
+          </fieldset>
+          <fieldset class="custom-making__email email-form">
+            <legend class="form__head email-form__head">e-mail</legend>
+            <div class="email-form__wrapper">
+              <input class="form__input email-form--input" type="email" id="e-mail" placeholder="Ваш Email*" required>
+            </div>
+          </fieldset>
+          <fieldset class="custom-making__more more-form">
+            <legend class="form__head more-form__head">Доп</legend>
+            <textarea class="form__textarea more-form--textarea" id="more-info" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
+          </fieldset>
+          <p class="custom-making__required">*Поля обязательны для заполнения</p>
+          <button type="submit" class="custom-making__button button">Отправить заказ</button>
+        </form>
+      </section>
+      <footer class="main-footer">
+        <div class="main-footer__social social-list">
+          <a href="#" class="social-list__item instagram">Instagram</a>
+          <a href="#" class="social-list__item facebook">Facebook</a>
+          <a href="#" class="social-list__item twitter">Twitter</a>
+        </div>
+        <div class="main-footer__html-academy html-academy">
+          <p class="html-academy__head">Разработано</p>
+          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">Html-academy</a>
+        </div>
+      </footer>
+    </main>
+    
