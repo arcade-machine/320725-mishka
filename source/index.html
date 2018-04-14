@@ -7,16 +7,16 @@
   <body>
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
+        <img class="header__logo-image" src="/placeholder.jpg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">Открытие меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="#">Каталог товаров</a>
+            <a href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+            <a href="form.html">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
             <a href="#">Поиск по сайту</a>
@@ -25,7 +25,7 @@
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <button class="main_navigation__close"type="button">x</button>
+        <button class="main_navigation__close" type="button">x</button>
       </nav>
     </header>
     <main class="main-page">
@@ -33,11 +33,15 @@
         <h1 class="visually-hidden">Магазин товаров ручных работ 'Мишка'</h1>
         <h2 class="main-page__intro">Милые штуки ручной работы для дома</h2>
         <ul class="main-page__catalog catalog-list">
-          <li class="catalog-list__item catalog-list__interior">
-            <p class="catalog-list__info">Предметы интерьера</p>
+          <li class="catalog-list__item">
+            <a class="catalog-list--interior" href="#">
+              <p class="catalog-list__info">Предметы интерьера</p>
+            </a>
           </li>
-          <li class="catalog-list__item catalog-list__toys">
-            <p class="catalog-list__info">Детские игрушки</p>
+          <li class="catalog-list__item">
+            <a class="catalog-list--toys" href="#">
+              <p class="catalog-list__info">Детские игрушки</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -73,13 +77,13 @@
           </tr>
         </table>
         <div class="featured__item items-list">
-          <img class="items-list__image" width="260" height="315" alt="Вязанные корзинки">
+          <img class="items-list__image" width="260" height="315" src="/placeholder.jpg" alt="Вязанные корзинки">
           <p class="items-list__price">Цена:990 руб.</p>
-          <button class="button items-list__button">Заказать</button>     
+          <a href="#" class="button items-list__button">Заказать</a>     
         </div>
       </section>
       <section class="about-us">
-        <h2 class="about-us__header">Коротко о нас:</h2>]
+        <h2 class="about-us__header">Коротко о нас:</h2>
         <ul class="about-us__list little-info">
           <li class="little-info__list material">
             <p>Экологически чистые материалы</p>
@@ -121,7 +125,7 @@
               e-mail:
             </td>
             <td class="contacts__value">
-              <a class="contacts__email" href="mailto:nfo@mimimishkashop.ru">nfo@mimimishkashop.ru</a>
+              <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </td>
           </tr>
           <tr>
@@ -133,7 +137,7 @@
             </td>
           </tr>
         </table>
-        <img class="contacts-map" width="322" height="457" alt="Магазин товаров ручных работ 'Мишка'">
+        <img class="contacts-map" src="/placeholder.jpg" width="322" height="457" alt="Магазин товаров ручных работ 'Мишка'">
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
       <footer class="main-footer">
