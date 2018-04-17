@@ -1,21 +1,13 @@
-.main-page__header {
-  
-}
-
-
 .main-page__intro {
   position: relative;
-  
   margin: 0;
   padding: 0;
   padding-top: 75px;
   padding-left: 35px;
-  
-  font-family: "open-sans_bold", Arial, sans-serif;
+  font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  
   min-height: 280px;
   max-width: 260px;
   text-align: center;
@@ -24,12 +16,10 @@
 .main-page__intro::before {
   content: "";
   position: absolute;
-  
   width: 575px;
   height: 373px;
   top: 0;
   left: 0;
-  
-  background-image: url(.../img/hero-mobile@1x.jpg);
+  background-image: url(".../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
 }

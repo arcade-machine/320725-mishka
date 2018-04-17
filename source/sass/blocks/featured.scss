@@ -9,8 +9,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-    
-  font-family: "open-sans_bold", Arial, sans-serif;
+  font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -20,16 +19,13 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  
   display: inline-block;
   vertical-align: top;
-  
-  font-family: "open-sans_bold", Arial, sans-serif;
+  font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  
   color: #63d1bb;
 }
 
@@ -37,31 +33,25 @@
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  
-  font-family: "open-sans", Arial, sans-serif;
+  font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
-  
   color: #444444;
 }
 
 .featured__spec {
   border-collapse: collapse;
   width: 100%;
-  
   margin-bottom: 30px;
 }
 
 .featured__field,
-.featured__value{
+.featured__value {
   margin: 0;
   padding: 0;
-  
-  font-family: "open-sans", Arial, sans-serif;
+  font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
-  
   color: #444444;
-  
   border-bottom: 1px solid #ececec;
 }

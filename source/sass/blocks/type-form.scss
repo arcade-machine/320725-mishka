@@ -7,13 +7,11 @@
 .type-controls__item {
   display: inline-block;
   vertical-align: top;
-  
   margin: 0;
   padding: 0;
   padding-top: 25px;
   padding-left: 25px;
-  
-  font-family: "open-sans_bold", Arial, sans-serif;
+  font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;

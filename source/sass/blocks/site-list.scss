@@ -7,7 +7,6 @@
 .site-list__item {
   margin: 0;
   padding: 0;
-  
   padding-left: 75px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -18,15 +17,12 @@
 
 .site-list__link {
   position: relative;
-  
   color: #000000;
   text-decoration: none;
-  
-  font-family: "open-sans_bold", Arial, sans-serif;
+  font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  
   display: inline-block;
   vertical-align: top;
 }
