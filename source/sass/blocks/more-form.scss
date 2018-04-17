@@ -1,0 +1,22 @@
+.more-form {
+  border: none;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 540px;
+  
+  border: 2px solid #000000;
+  
+  resize: vertical;
+}
+
+.form__textarea::placeholder {
+  font-family: "open-sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  
+  color: #444444;
+  opacity: .3;
+}

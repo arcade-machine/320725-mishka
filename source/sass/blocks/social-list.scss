@@ -1,0 +1,18 @@
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.social-list__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  
+  width: 40px;
+  height: 40px;
+  
+  background-color: red;
+}

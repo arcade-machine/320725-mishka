@@ -3,39 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img class="header__logo-image" src="/placeholder.jpg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
+        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">Открытие меню</button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html">Каталог товаров</a>
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-list__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+            <a class="site-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-list__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <button class="main_navigation__close" type="button">x</button>
       </nav>
     </header>
     <main class="form-page">
-      <div class="form-page__header">
-        <h1 class="form-page__head">Вязание на заказ</h1>
-      </div>
+      <h1 class="form-page__head">Вязание на заказ</h1>
       <section class="custom">
         <h2 class="visually-hidden">Составление заявки на вязание</h2>
-        <p class="custom__top">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="custom__form custom-making">
+        <p class="custom__top">Мы будем рады воплотить в жизнь<br> ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru/" class="custom__form custom-making">
           <fieldset class="custom-making__type type-form">
             <legend class="form__head type-form__head">Тип</legend>
             <input class="visually-hidden" type="radio" id="accessory" name="type" value="accessory" checked>
@@ -60,15 +59,15 @@
               <label class="color-controls__item color-controls__item--black" for="black">Черный</label>
               <label class="color-controls__item color-controls__item--pink" for="pink">Розовый</label>
               <label class="color-controls__item color-controls__item--pink" for="orange">Оранжевый</label>
-            </div>            
+            </div>
           </fieldset>
           <fieldset class="custom-making__full-name full-name-form">
             <legend class="form__head full-name-form__head">ФИО</legend>
-            <label class="form__head full-name-form__name" for="name">Имя:</label>
+            <label class="full-name-form__name" for="name">Имя:</label>
             <input class="form__input full-name-form__name--input" type="text" id="name" placeholder="Введите ваше имя*" required>
-            <label class="form__head full-name-form__surname" for="surname">Фамилия:</label>
+            <label class="full-name-form__surname" for="surname">Фамилия:</label>
             <input class="form__input full-name-form__surname--input" type="text" id="surname" placeholder="Укажите фамилию*" required>
-            <label class="form__head full-name-form__patronymic" for="patronymic">Отчество:</label>
+            <label class="full-name-form__patronymic" for="patronymic">Отчество:</label>
             <input class="form__input full-name-form__patronymic--input" type="text" id="patronymic" placeholder="Отчество, если желаете">
           </fieldset>
           <fieldset class="custom-making__telephone telephone-form">
@@ -91,15 +90,25 @@
           <button type="submit" class="custom-making__button button">Отправить заказ</button>
         </form>
       </section>
+    </main>
       <footer class="main-footer">
         <div class="main-footer__social social-list">
-          <a href="#" class="social-list__item instagram">Instagram</a>
-          <a href="#" class="social-list__item facebook">Facebook</a>
-          <a href="#" class="social-list__item twitter">Twitter</a>
+          <a href="#" class="social-list__item social-list__item--instagram">
+            <p class="visually-hidden">Instagram</p>
+          </a>
+          <a href="#" class="social-list__item social-list__item--facebook">
+            <p class="visually-hidden">Facebook</p>
+          </a>
+          <a href="#" class="social-list__item social-list__item--twitter">
+            <p class="visually-hidden">Twitter</p>
+          </a>
         </div>
         <div class="main-footer__html-academy html-academy">
           <p class="html-academy__head">Разработано</p>
-          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">Html-academy</a>
+          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="visually-hidden">Html-academy</p>
+          </a>
         </div>
       </footer>
-    </main>
+  </body>
+</html>
