@@ -1,0 +1,24 @@
+.main-page {
+  position: relative;
+}
+
+.main-page__intro {
+  margin: 0;
+  padding: 0;
+  padding-top: 75px;
+  padding-left: 35px;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  min-height: 230px;
+  max-width: 260px;
+  text-align: center;
+}
+
+.main-page__image {
+  position: absolute;
+  left: -125px;
+  top: 0;
+  z-index: -1;
+}

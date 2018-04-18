@@ -1,0 +1,16 @@
+.little-info {
+  padding: 0;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  list-style: none;
+}
+
+.little-info__item {
+  width: 100%;
+  min-height: 125px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}

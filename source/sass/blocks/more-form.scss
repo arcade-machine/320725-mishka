@@ -1,0 +1,33 @@
+.more-form {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.more-form__head {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.more-form__textarea {
+  width: 100%;
+  min-height: 140px;
+  max-height: 540px;
+  border: 1px solid #000000;
+  resize: vertical;
+
+  &::placeholder {
+    font-family: "open-sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,48 @@
+.contacts {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contacts__header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__about-us {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.contacts__field,
+.contacts__value {
+  padding-bottom: 45px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.contacts__value {
+  padding-left: 30px;
+
+  &--email {
+    text-decoration: none;
+    color: #444444;
+  }
+}
+
+.contacts__map {
+  position: relative;
+  left: -30px;
+  margin-bottom: 40px;
+}

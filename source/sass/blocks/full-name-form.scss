@@ -1,0 +1,44 @@
+.full-name-form {
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+}
+
+.full-name-form__head {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.full-name-form__header {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.full-name-form__input {
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  &::placeholder {
+    font-family: "open-sans", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #444444;
+    opacity: 0.3;
+  }
+}

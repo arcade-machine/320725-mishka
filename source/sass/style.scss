@@ -1,0 +1,39 @@
+// Общие стили
+
+@import "utils/scaffolding.scss";
+
+// Блоки
+@import "blocks/header.scss",
+  "blocks/main-footer.scss",
+  "blocks/modal-cart.scss",
+  "blocks/button.scss",
+  "blocks/site-list.scss",
+  "blocks/social-list.scss",
+  "blocks/html-academy.scss";
+
+//index
+@import "blocks/main-page.scss",
+  "blocks/catalog-list.scss",
+  "blocks/featured.scss",
+  "blocks/items-list.scss",
+  "blocks/about-us.scss",
+  "blocks/little-info.scss",
+  "blocks/review.scss",
+  "blocks/contacts.scss";
+
+//catalog
+@import "blocks/catalog-page.scss",
+  "blocks/catalog-item.scss",
+  "blocks/catalog.scss",
+  "blocks/video.scss";
+
+//form-page
+@import "blocks/form-page.scss",
+  "blocks/custom.scss",
+  "blocks/custom-making.scss",
+  "blocks/type-form.scss",
+  "blocks/color-form.scss",
+  "blocks/full-name-form.scss",
+  "blocks/telephone-form.scss",
+  "blocks/email-form.scss",
+  "blocks/more-form.scss";
