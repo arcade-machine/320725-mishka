@@ -13,14 +13,14 @@
   padding-bottom: 27px;
   box-sizing: border-box;
   color: #ffffff;
-}
 
-.catalog-list__link--interior {
-  background-color: #63d1bb;
-}
+  &--interior {
+    background-color: #63d1bb;
+  }
 
-.catalog-list__link--toys {
-  background-color: #56c3b2;
+  &--toys {
+    background-color: #56c3b2;
+  }
 }
 
 .catalog-list__info {

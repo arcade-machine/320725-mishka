@@ -1,45 +1,18 @@
 // Общие стили
 
-@import "./utils/scaffolding.scss";
+@import "utils/scaffolding.scss";
 
 // Блоки
-//header
-@import "./blocks/header.scss";
-@import "./blocks/site-list.scss";
-//footer
-@import "./blocks/main-footer.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/html-academy.scss";
-//modal-cart
-@import "./blocks/modal-cart.scss";
-//button
-@import "./blocks/button.scss";
+@import "blocks/header.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/button.scss";
+
 //index
-//main-page__header
-@import "./blocks/main-page__header.scss";
-@import "./blocks/catalog-list.scss";
-//featured
-@import "./blocks/featured.scss";
-@import "./blocks/items-list.scss";
-//about-us
-@import "./blocks/about-us.scss";
-@import "./blocks/little-info.scss";
-@import "./blocks/review.scss";
-//contacts
-@import "./blocks/contacts.scss";
+@import "blocks/main-page.scss";
+
 //catalog
-@import "./blocks/catalog-page.scss";
-@import "./blocks/catalog.scss";
-@import "./blocks/catalog-item.scss";
-//video
-@import "./blocks/video.scss";
+@import "blocks/catalog-page.scss";
+
 //form-page
-@import "./blocks/form-page.scss";
-@import "./blocks/custom.scss";
-@import "./blocks/custom-making.scss";
-@import "./blocks/type-form.scss";
-@import "./blocks/color-forms.scss";
-@import "./blocks/full-name-form.scss";
-@import "./blocks/telephone-form.scss";
-@import "./blocks/email-form.scss";
-@import "./blocks/more-form.scss";
+@import "blocks/form-page.scss";

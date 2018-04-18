@@ -1,16 +1,28 @@
 .type-form {
+  padding: 0;
+  margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
 }
 
-.type-controls__item {
+.type-form__head {
+  margin: 0;
+  padding: 0;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+}
+
+.type-form__item {
   display: inline-block;
   vertical-align: top;
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  padding-left: 25px;
+  padding-left: 60px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;

@@ -8,7 +8,7 @@
   <body>
     <header class="header">
       <a href="index.html" class="header__logo">
-        <img class="header__logo-image" src="./img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
+        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">Открытие меню</button>
@@ -35,7 +35,7 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" width="260" height="190" alt="Зайчик-попрыгайчик" src="./img/photo-hare-mobile@1x.jpg">
+              <img class="catalog-item__image" width="260" height="190" alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg">
               <h2 class="catalog-item__head">Зайчик-попрыгайчик</h2>
             </a>
             <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
@@ -43,7 +43,7 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" width="260" height="190" alt="Корзинка для белья" src="./img/photo-bowl-mobile@1x.jpg">
+              <img class="catalog-item__image" width="260" height="190" alt="Корзинка для белья" src="img/photo-bowl-mobile@1x.jpg">
               <h2 class="catalog-item__head">Корзинка для белья</h2>
             </a>
             <p class="catalog-item__info">Диаметр 15 см, высота 10 см</p>
@@ -61,44 +61,44 @@
       </section>
       <section class="video">
         <h2 class="video__head">Процесс производства</h2>
-        <img class="video__video" width="260" height="150" alt="Видео процесса производства" src="./img/video-mobile@1x.jpg">
+        <img class="video__video" width="260" height="150" alt="Видео процесса производства" src="img/video-mobile@1x.jpg">
         <p class="video__info">По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <a href="#" class="button video__button">Сделать заказ</a>
       </section>
-      </main>
-      <footer class="main-footer">
-        <div class="main-footer__social social-list">
-          <a href="#" class="social-list__item social-list__item--instagram">
-            <p class="visually-hidden">Instagram</p>
-          </a>
-          <a href="#" class="social-list__item social-list__item--facebook">
-            <p class="visually-hidden">Facebook</p>
-          </a>
-          <a href="#" class="social-list__item social-list__item--twitter">
-            <p class="visually-hidden">Twitter</p>
-          </a>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__social social-list">
+        <a href="#" class="social-list__item social-list__item--instagram">
+          <p class="visually-hidden">Instagram</p>
+        </a>
+        <a href="#" class="social-list__item social-list__item--facebook">
+          <p class="visually-hidden">Facebook</p>
+        </a>
+        <a href="#" class="social-list__item social-list__item--twitter">
+          <p class="visually-hidden">Twitter</p>
+        </a>
+      </div>
+      <div class="main-footer__html-academy html-academy">
+        <p class="html-academy__head">Разработано</p>
+        <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="visually-hidden">Html-academy</p>
+        </a>
+      </div>
+    </footer>
+    <section class="modal-cart">
+      <h3 class="modal-cart__header">Добавить в корзину</h3>
+      <p class="modal-cart__type">Выберите размер:</p>
+      <form action="https://echo.htmlacademy.ru/" class="modal-cart__form form">
+        <input type="radio" class="visually-hidden" id="S-size" name="cart">
+        <input type="radio" class="visually-hidden" id="M-size" name="cart">
+        <input type="radio" class="visually-hidden" id="L-size" name="cart">
+        <div class="form-controls">
+          <label class="form-controls__item form-controls__item--S" for="S-size">S</label>
+          <label class="form-controls__item form-controls__item--M" for="M-size">M</label>
+          <label class="form-controls__item form-controls__item--L" for="L-size">L</label>
         </div>
-        <div class="main-footer__html-academy html-academy">
-          <p class="html-academy__head">Разработано</p>
-          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="visually-hidden">Html-academy</p>
-          </a>
-        </div>
-      </footer>
-      <section class="modal-cart">
-        <h3 class="modal-cart__header">Добавить в корзину</h3>
-        <p class="modal-cart__type">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form form">
-          <input type="radio" class="visually-hidden" id="S-size" name="cart">
-          <input type="radio" class="visually-hidden" id="M-size" name="cart">
-          <input type="radio" class="visually-hidden" id="L-size" name="cart">
-          <div class="form-controls">
-            <label class="form-controls__item form-controls__item--S" for="S-size">S</label>
-            <label class="form-controls__item form-controls__item--M" for="M-size">M</label>
-            <label class="form-controls__item form-controls__item--L" for="L-size">L</label>
-          </div>
-          <button type="submit" class="button modal-cart__button">Добавить</button>
-        </form>
-      </section>
+        <button type="submit" class="button modal-cart__button">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>

@@ -2,16 +2,16 @@
   font-family: "open-sans";
   font-weight: normal;
   font-style: normal;
-  src: url(".../fonts/opensans.woff2") format("woff2"),
-    url(".../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "open-sans_bold";
   font-weight: normal;
   font-style: normal;
-  src: url(".../fonts/opensansbold.woff2") format("woff2"),
-    url(".../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
 }
 
 body {

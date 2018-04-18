@@ -1,5 +1,13 @@
-.main-page__intro {
+@import "blocks/catalog-list.scss";
+@import "blocks/featured.scss";
+@import "blocks/about-us.scss";
+@import "blocks/contacts.scss";
+
+.main-page {
   position: relative;
+}
+
+.main-page__intro {
   margin: 0;
   padding: 0;
   padding-top: 75px;
@@ -8,18 +16,14 @@
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  min-height: 280px;
+  min-height: 230px;
   max-width: 260px;
   text-align: center;
 }
 
-.main-page__intro::before {
-  content: "";
+.main-page__image {
   position: absolute;
-  width: 575px;
-  height: 373px;
+  left: -125px;
   top: 0;
-  left: 0;
-  background-image: url(".../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  z-index: -1;
 }

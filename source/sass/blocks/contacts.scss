@@ -34,11 +34,11 @@
 
 .contacts__value {
   padding-left: 30px;
-}
 
-.contacts__value--email {
-  text-decoration: none;
-  color: #444444;
+  &--email {
+    text-decoration: none;
+    color: #444444;
+  }
 }
 
 .contacts__map {
