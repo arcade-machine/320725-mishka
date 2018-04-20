@@ -1,4 +1,17 @@
 .header__logo {
-  width: 100%;
-  padding-left: 117px;
+  margin: 35%;
+  padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .header {
+    width: 100%;
+    display: flex;
+  }
+  .header__logo {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-right: 245px;
+  }
 }

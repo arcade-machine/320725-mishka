@@ -3,30 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="header">
-      <a href="index.html" class="header__logo">
+      <a class="header__logo">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">Открытие меню</button>
-        <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Каталог товаров</a>
+        <ul class="main-navigation__user-block user-block">
+          <li class="user-block__item user-block__item--search">
+            <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">Корзина: пока пуста</a>
+          <li class="user-block__item user-block__item--cart">
+            <a class="user-block__link user-block__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <button class="main_navigation__close" type="button">x</button>
+        <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--catalog">
+            <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item site-list__item--form">
+            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="options">
+          <li class="options__item">Новые поступления</li>
+          <li class="options__item">Распродажа</li>
+          <li class="options__item options__item--delivery">Бесплатная доставка по России</li>
+        </ul>
+        </div>
+        <button class="main-navigation__close" type="button">x</button>
       </nav>
     </header>
     <main class="catalog-page">
@@ -100,5 +111,6 @@
         <button type="submit" class="button modal-cart__button">Добавить</button>
       </form>
     </section>
+    </div>
   </body>
 </html>

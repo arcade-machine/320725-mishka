@@ -1,0 +1,31 @@
+.options {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet) {
+  .options {
+    display: flex;
+  }
+  .options__item:not(:last-child) {
+    display: none;
+  }
+  .options__item--delivery {
+    font-family: "open-sans", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .options {
+    display: flex;
+  }
+  .options__item:not(:last-child) {
+    display: flex;
+  }
+}

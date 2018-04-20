@@ -14,3 +14,13 @@
   padding-top: 60px;
   box-sizing: border-box;
 }
+
+@media (min-width: $tablet) {
+  .little-info {
+    width: 334px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 415px;
+  }
+}
