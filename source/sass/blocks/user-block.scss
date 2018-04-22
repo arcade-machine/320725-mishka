@@ -30,8 +30,6 @@
 @media (min-width: $tablet) {
   .user-block {
     display: flex;
-    flex-direction: row;
-    order: -1;
   }
   .user-block__item {
     background-color: transparent;
@@ -53,5 +51,11 @@
   }
   .user-block__link--search {
     display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .user-block {
+    
   }
 }

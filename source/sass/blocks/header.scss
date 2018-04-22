@@ -7,11 +7,21 @@
   .header {
     width: 100%;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .header__logo {
-    display: inline-block;
+    position: absolute;
+    display: block;
     padding: 0;
     margin: 0;
-    margin-right: 245px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header__logo {
+    left: 46%;
+    top: 10px;
   }
 }
