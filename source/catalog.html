@@ -9,7 +9,7 @@
   <body>
     <div class="container">
     <header class="header">
-      <a class="header__logo">
+      <a class="header__logo" href="/index.html">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
       <nav class="main-navigation">
@@ -22,7 +22,6 @@
             <a class="user-block__link user-block__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--catalog">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -36,7 +35,6 @@
           <li class="options__item">Распродажа</li>
           <li class="options__item options__item--delivery">Бесплатная доставка по России</li>
         </ul>
-        </div>
         <button class="main-navigation__close" type="button">x</button>
       </nav>
     </header>
@@ -47,55 +45,72 @@
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
               <img class="catalog-item__image" width="260" height="190" alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg">
+            </a>
+            <div class="catalog-item__wrapper">
+            <a class="catalog-item__link" href="#">
               <h2 class="catalog-item__head">Зайчик-попрыгайчик</h2>
             </a>
             <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
             <p class="catalog-item__price">1 200 руб.</p>
+            </div>
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
               <img class="catalog-item__image" width="260" height="190" alt="Корзинка для белья" src="img/photo-bowl-mobile@1x.jpg">
+            </a>
+            <div class="catalog-item__wrapper">
+            <a>
               <h2 class="catalog-item__head">Корзинка для белья</h2>
             </a>
             <p class="catalog-item__info">Диаметр 15 см, высота 10 см</p>
             <p class="catalog-item__price">690 руб.</p>
+            </div>
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
               <img class="catalog-item__image" width="260" height="190" alt="Большая корзинка для игрушек" src="./img/photo-toys-mobile@1x.jpg">
+            </a>
+            <div class="catalog-item__wrapper">
+            <a>
               <h2 class="catalog-item__head">Большая корзинка для игрушек</h2>
             </a>
             <p class="catalog-item__info">Диаметр 30 см, высота 30 см</p>
             <p class="catalog-item__price">1 500 руб.</p>
+            </div>
           </li>
         </ul>
       </section>
       <section class="video">
         <h2 class="video__head">Процесс производства</h2>
         <img class="video__video" width="260" height="150" alt="Видео процесса производства" src="img/video-mobile@1x.jpg">
-        <p class="video__info">По просьбам наших<br> любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="button video__button">Сделать заказ</a>
+        <div class="video__wrapper">
+          <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a href="#" class="button video__button">Сделать заказ</a>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__social social-list">
-        <a href="#" class="social-list__item social-list__item--instagram">
-          <p class="visually-hidden">Instagram</p>
+        <a class="main-footer__logo" href="/index.html">
+          <img src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
         </a>
-        <a href="#" class="social-list__item social-list__item--facebook">
-          <p class="visually-hidden">Facebook</p>
-        </a>
-        <a href="#" class="social-list__item social-list__item--twitter">
-          <p class="visually-hidden">Twitter</p>
-        </a>
-      </div>
-      <div class="main-footer__html-academy html-academy">
-        <p class="html-academy__head">Разработано</p>
-        <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="visually-hidden">Html-academy</p>
-        </a>
-      </div>
-    </footer>
+        <div class="main-footer__social social-list">
+          <a href="#" class="social-list__item social-list__item--instagram">
+            <p class="visually-hidden">Instagram</p>
+          </a>
+          <a href="#" class="social-list__item social-list__item--facebook">
+            <p class="visually-hidden">Facebook</p>
+          </a>
+          <a href="#" class="social-list__item social-list__item--twitter">
+            <p class="visually-hidden">Twitter</p>
+          </a>
+        </div>
+        <div class="main-footer__html-academy html-academy">
+          <p class="html-academy__head">Разработано</p>
+          <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="visually-hidden">Html-academy</p>
+          </a>
+        </div>
+      </footer>
     <section class="modal-cart">
       <h3 class="modal-cart__header">Добавить в корзину</h3>
       <p class="modal-cart__type">Выберите размер:</p>

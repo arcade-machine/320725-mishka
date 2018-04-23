@@ -31,12 +31,13 @@
   .user-block {
     display: flex;
   }
+
   .user-block__item {
     background-color: transparent;
-    min-height: 90px; 
+    min-height: 90px;
     border: none;
   }
-  
+
   .user-block__item--search {
     width: 82px;
     position: relative;
@@ -44,18 +45,14 @@
     border-right: 1px solid #ececec;
     background-color: #ffffff;
   }
+
   .user-block__item--cart {
     min-height: 90px;
     min-width: 265px;
     background-color: #ffffff;
   }
+
   .user-block__link--search {
     display: none;
-  }
-}
-
-@media (min-width: $desktop) {
-  .user-block {
-    
   }
 }

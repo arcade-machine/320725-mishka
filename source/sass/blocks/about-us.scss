@@ -23,9 +23,22 @@
     padding-top: 65px;
     padding-bottom: 85px;
   }
+
   .about-us__header {
     font-size: 43px;
     line-height: 50px;
+    padding: 0;
+    margin: 0;
   }
-  
+}
+
+@media (min-width: $desktop) {
+  .about-us {
+    padding-left: 170px;
+  }
+
+  .about-us__header {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

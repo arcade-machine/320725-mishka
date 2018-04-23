@@ -10,3 +10,10 @@
   line-height: 18px;
   color: #000000;
 }
+
+@media (min-width: $tablet) {
+  .html-academy__head {
+    margin: 0;
+    padding: 0;
+  }
+}

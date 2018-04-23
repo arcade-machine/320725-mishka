@@ -10,9 +10,11 @@
     display: flex;
     margin-left: auto;
   }
+
   .options__item:not(:last-child) {
     display: none;
   }
+
   .options__item--delivery {
     font-family: "open-sans", "Arial", sans-serif;
     font-size: 15px;
@@ -29,11 +31,14 @@
     display: flex;
     width: 100%;
   }
+
   .options__item:not(:last-child) {
     display: block;
   }
+
   .options__item {
     margin-right: 50px;
+
     &--delivery {
       align-self: baseline;
       margin-right: 0;

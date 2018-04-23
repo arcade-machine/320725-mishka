@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .main-navigation__toggle {
   display: block;
   position: absolute;
@@ -25,16 +26,20 @@
     width: 100%;
     flex-wrap: wrap;
   }
+
   .main-navigation__user-block {
     margin-left: auto;
     order: -1;
   }
+
   .main-navigation__wrapper {
     display: flex;
   }
+
   .main-navigation__toggle {
     display: none;
   }
+
   .main-navigation__close {
     display: none;
   }

@@ -35,9 +35,21 @@
 @media (min-width: $tablet) {
   .catalog-list {
     display: flex;
-    width: 668px;
+    width: 100%;
   }
+
   .catalog-list__item {
-    width: 334px;
+    width: 50%;
+  }
+
+  .catalog-list__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .catalog-list__info {
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

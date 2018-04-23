@@ -17,6 +17,7 @@
 }
 
 .more-form__textarea {
+  box-sizing: border-box;
   width: 100%;
   min-height: 140px;
   max-height: 540px;
@@ -29,5 +30,37 @@
     line-height: 18px;
     color: #444444;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .more-form {
+    position: relative;
+    padding-left: 167px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+
+  .more-form__head {
+    font-size: 17px;
+    line-height: 16px;
+    position: absolute;
+    top: 62px;
+    left: 0;
+  }
+
+  .more-form__textarea::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .more-form {
+    width: 700px;
+  }
+
+  .more-form__head {
+    left: 70px;
   }
 }
