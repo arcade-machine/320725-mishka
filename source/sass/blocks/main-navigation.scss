@@ -15,10 +15,6 @@
   position: absolute;
 }
 
-.main-navigation__list {
-  order: -1;
-}
-
 @media (min-width: $tablet) {
   .main-navigation {
     display: flex;

@@ -50,19 +50,21 @@
 
 @media (min-width: $tablet) {
   .items-list {
-    position: relative;
-    width: 290px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
   .items-list__image {
+    width: 50%;
     margin: 0;
     padding: 0;
     position: absolute;
     display: block;
-    left: 334px;
+    right: 0;
   }
 
   .items-list__about {
