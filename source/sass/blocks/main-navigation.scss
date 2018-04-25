@@ -2,21 +2,83 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #ececec;
 }
 
 .main-navigation__toggle {
   display: block;
   position: absolute;
+  background-color: transparent;
+  border: none;
   right: 0;
+  width: 0;
+  height: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -40px;
+    width: 21px;
+    height: 15px;
+    background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-navigation__close {
   display: block;
   position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 0;
+  height: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: -55px;
+    left: 270px;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $mobile-only) {
+  .main-navigation--closed .main-navigation__list {
+    display: none;
+  }
+
+  .main-navigation--closed .main-navigation__user-block {
+    display: none;
+  }
+
+  .main-navigation--closed .main-navigation__options {
+    display: none;
+  }
+
+  .main-navigation--closed .main-navigation__close {
+    display: none;
+  }
+
+  .main-navigation--opened .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__close {
+    display: none;
+  }
+
+  .main-navigation--nojs .main-navigation__toggle {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
   .main-navigation {
+    border: none;
     display: flex;
     flex-direction: row;
     width: 100%;

@@ -5,10 +5,16 @@
   padding: 0;
 }
 
+.options__link {
+  text-decoration: none;
+  color: #444444;
+}
+
 @media (min-width: $tablet) {
   .options {
     display: flex;
     margin-left: auto;
+    padding-top: 10px;
   }
 
   .options__item:not(:last-child) {
@@ -27,7 +33,9 @@
   .options {
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 24px;
     display: flex;
     width: 100%;
   }

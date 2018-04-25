@@ -1,19 +1,43 @@
+.html-academy {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
 .html-academy__head {
+  display: block;
   margin: 0;
   padding: 0;
-  padding-left: 40px;
-  padding-top: 25px;
   padding-bottom: 30px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: #000000;
+  margin-right: 30px;
+}
+
+.html-academy__link {
+  position: relative;
+  display: block;
+  width: 28px;
+  height: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -5px;
+    left: 0;
+    width: 28px;
+    height: 35px;
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet) {
-  .html-academy__head {
-    margin: 0;
+  .html-academy {
+    margin-left: auto;
     padding: 0;
   }
 }

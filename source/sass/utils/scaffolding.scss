@@ -18,6 +18,8 @@ $tablet: 768px;
 
 $desktop: 1150px;
 
+$mobile-only: 767px;
+
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +34,17 @@ body {
   padding: 0 30px;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.main-page-container {
+  position: relative;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -55,6 +68,19 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 0 50px;
   }
+
+  .header-container {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .main-page-container {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -62,5 +88,15 @@ input[type="radio"].visually-hidden {
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
+  }
+  .header-container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+    .main-page-container {
+    width: 1150px;
+    margin: 0 auto;
   }
 }

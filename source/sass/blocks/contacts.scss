@@ -44,11 +44,21 @@
   margin: 0;
   padding: 0;
   width: 160px;
+}
 
-  &--email {
-    width: 177px;
-    text-decoration: none;
-    color: #444444;
+.contacts__value--email {
+  width: 177px;
+  text-decoration: none;
+  color: #444444;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #62d1ba;
   }
 }
 

@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
     <header class="header">
+      <div class="header-container">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Открытие меню</button>
-        <ul class="main-navigation__user-block user-block">
-          <li class="user-block__item user-block__item--search">
-            <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-block__item user-block__item--cart">
-            <a class="user-block__link user-block__link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button"></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--catalog">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__user-block user-block">
+          <li class="user-block__item user-block__item--search">
+            <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
+          </li>
+          <li class="user-block__item user-block__item--cart">
+            <a class="user-block__link user-block__link--cart" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-navigation__options options">
@@ -41,9 +41,11 @@
             <a class="options__link" href=#>Бесплатная доставка по России</a>
           </li>
         </ul>
-        <button class="main-navigation__close" type="button">x</button>
+        <button class="main-navigation__close" type="button"></button>
       </nav>
+      </div>
     </header>
+    <div class="container">
     <main class="form-page">
       <h1 class="form-page__head">Вязание на заказ</h1>
       <section class="custom">
@@ -137,5 +139,6 @@
         </div>
       </footer>
     </div>
+  <script src="js/skript.js"></script>
   </body>
 </html>

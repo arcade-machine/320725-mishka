@@ -1,0 +1,44 @@
+.arrows {
+  width: 100%;
+  display: flex;
+}
+
+.arrows__item {
+  position: relative;
+  border: 1px solid #ececec;
+  background-color: transparent;
+  height: 50px;
+  width: 50%;
+
+  &--arrow-back::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 38px;
+    width: 51px;
+    height: 27px;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--arrow-forward::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 38px;
+    width: 51px;
+    height: 27px;
+    background-image: url("../img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet) {
+  .arrows {
+    width: 170px;
+  }
+
+  .arrows__item {
+    border: none;
+  }
+}
