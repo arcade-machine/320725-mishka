@@ -14,6 +14,7 @@
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
+  text-transform: uppercase;
 }
 
 .type-form__item {
@@ -27,4 +28,40 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+}
+
+@media (min-width: $tablet) {
+  .type-form {
+    padding: 0;
+    position: relative;
+    margin-bottom: 70px;
+  }
+
+  .type-form__controls {
+    padding-left: 245px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .type-form__head {
+    position: absolute;
+  }
+
+  .type-form__item {
+    font-size: 19px;
+    line-height: 18px;
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .type-form__head {
+    left: 65px;
+  }
 }

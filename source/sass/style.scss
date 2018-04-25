@@ -4,6 +4,9 @@
 
 // Блоки
 @import "blocks/header.scss",
+  "blocks/user-block.scss",
+  "blocks/main-navigation.scss",
+  "blocks/options.scss",
   "blocks/main-footer.scss",
   "blocks/modal-cart.scss",
   "blocks/button.scss",
@@ -23,8 +26,8 @@
 
 //catalog
 @import "blocks/catalog-page.scss",
-  "blocks/catalog-item.scss",
   "blocks/catalog.scss",
+  "blocks/catalog-item.scss",
   "blocks/video.scss";
 
 //form-page

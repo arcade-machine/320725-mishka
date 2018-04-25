@@ -3,10 +3,10 @@
 }
 
 .main-page__intro {
+  display: block;
   margin: 0;
   padding: 0;
   padding-top: 75px;
-  padding-left: 35px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
@@ -21,4 +21,33 @@
   left: -125px;
   top: 0;
   z-index: -1;
+}
+
+@media (min-width: $tablet) {
+  .main-page {
+    margin-top: -30px;
+    width: 100%;
+  }
+
+  .main-page__intro {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 120px;
+    font-size: 43px;
+    line-height: 50px;
+    max-width: 100%;
+    min-height: 625px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-page__intro {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 165px;
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 700px;
+    min-height: 625px;
+  }
 }

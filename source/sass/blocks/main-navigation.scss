@@ -1,0 +1,48 @@
+.main-navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-navigation__toggle {
+  display: block;
+  position: absolute;
+  right: 0;
+}
+
+.main-navigation__close {
+  display: block;
+  position: absolute;
+}
+
+@media (min-width: $tablet) {
+  .main-navigation {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .main-navigation__user-block {
+    margin-left: auto;
+    order: -1;
+  }
+
+  .main-navigation__wrapper {
+    display: flex;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__close {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-navigation__list {
+    order: -2;
+  }
+}

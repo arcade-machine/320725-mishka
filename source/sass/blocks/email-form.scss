@@ -31,3 +31,34 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .email-form {
+    position: relative;
+    padding-left: 167px;
+    background-color: #f1f1f1;
+  }
+
+  .email-form__head {
+    font-size: 17px;
+    line-height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+  }
+
+  .email-form__input::placeholder {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .email-form {
+    width: 700px;
+  }
+
+  .email-form__head {
+    left: 70px;
+  }
+}

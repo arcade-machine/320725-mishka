@@ -9,11 +9,17 @@
   box-sizing: border-box;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   color: #444444;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .button {
+    font-size: 17px;
+  }
 }

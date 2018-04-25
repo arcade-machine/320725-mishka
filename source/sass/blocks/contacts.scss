@@ -1,6 +1,4 @@
 .contacts {
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -17,6 +15,10 @@
 }
 
 .contacts__about-us {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   border-collapse: collapse;
   font-family: "open-sans", "Arial", sans-serif;
@@ -25,17 +27,26 @@
   color: #444444;
 }
 
-.contacts__field,
-.contacts__value {
-  padding-bottom: 45px;
+.contacts__field {
+  margin: 0;
+  margin-right: 30px;
+  margin-bottom: 35px;
+  padding: 0;
   box-sizing: border-box;
   vertical-align: top;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__value {
-  padding-left: 30px;
+  margin: 0;
+  padding: 0;
+  width: 160px;
 
   &--email {
+    width: 177px;
     text-decoration: none;
     color: #444444;
   }
@@ -45,4 +56,79 @@
   position: relative;
   left: -30px;
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contacts__field {
+    margin-bottom: 0;
+  }
+
+  .contacts__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__about-us {
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    font-size: 17px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__value {
+    width: 210px;
+
+    &--email {
+      width: 200px;
+      margin-right: 55px;
+    }
+  }
+
+  .contacts__map {
+    padding-left: 300px;
+  }
+
+  .contacts__button {
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+    width: 340px;
+    padding-left: 170px;
+    padding-top: 140px;
+    padding-bottom: 105px;
+    flex-direction: column;
+  }
+
+  .contacts__header {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 60px;
+  }
+
+  .contacts__field {
+    margin-bottom: 65px;
+  }
+
+  .contacts__map {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 525px;
+    top: 80px;
+  }
 }

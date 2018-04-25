@@ -3,10 +3,46 @@
   padding: 0;
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 20px;
   background-color: #f1f1f1;
 }
 
 .main-footer__social {
+  padding-left: 57px;
+  padding-right: 57px;
   margin: 0;
-  padding: 25px 60px;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main-footer {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+  }
+
+  .main-footer__logo {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-right: 150px;
+  }
+
+  .main-footer__social {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .main-footer__html-academy {
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+  }
 }

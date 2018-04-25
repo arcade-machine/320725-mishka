@@ -17,3 +17,21 @@
   color: #000000;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .catalog-page__head {
+    padding-top: 100px;
+    padding-bottom: 110px;
+    margin-bottom: 90px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-page__head {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 140px;
+  }
+}
