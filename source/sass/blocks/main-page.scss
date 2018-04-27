@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet) {
   .main-page {
-    margin-top: -33px;
+    margin-top: -39px;
     width: 100%;
   }
 
@@ -57,6 +57,11 @@
 }
 
 @media (min-width: $desktop) {
+  .main-page {
+    margin-top: -33px;
+    width: 100%;
+  }
+  
   .main-page__intro {
     margin: 0 auto;
     padding: 0;

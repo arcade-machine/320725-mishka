@@ -20,6 +20,10 @@
 }
 
 @media (min-width: $tablet) {
+  .form-page {
+    margin-top: -39px;
+  }
+  
   .form-page__head {
     min-height: 225px;
     font-size: 43px;
@@ -30,6 +34,10 @@
 }
 
 @media (min-width: $desktop) {
+  .form-page {
+    margin-top: -33px;
+  }
+  
   .form-page__head {
     min-height: 185px;
     font-size: 53px;

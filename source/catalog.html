@@ -45,9 +45,9 @@
       </nav>
       </div>
     </header>
-    <div class="container">
     <main class="catalog-page">
       <h1 class="catalog-page__head">Каталог товаров</h1>
+      <div class="container">
       <section class="catalog-page__items catalog">
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
@@ -55,7 +55,7 @@
               <img class="catalog-item__image" width="260" height="190" alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg">
             </a>
             <div class="catalog-item__wrapper">
-            <a class="catalog-item__link" href="#">
+            <a>
               <h2 class="catalog-item__head">Зайчик-попрыгайчик</h2>
             </a>
             <p class="catalog-item__info">Рост 30 см, вес 200 г</p>
@@ -90,12 +90,16 @@
       </section>
       <section class="video">
         <h2 class="video__head">Процесс производства</h2>
-        <img class="video__video" width="260" height="150" alt="Видео процесса производства" src="img/video-mobile@1x.jpg">
+        <div class="video__video">
+          <img class="video__image" width="260" height="150" alt="Видео процесса производства" src="img/video-mobile@1x.jpg">
+          <span class="video__play"></span>
+        </div>
         <div class="video__wrapper">
           <p class="video__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a href="#" class="button video__button">Сделать заказ</a>
         </div>
       </section>
+      </div>
     </main>
     <footer class="main-footer">
         <a class="main-footer__logo" href="index.html">

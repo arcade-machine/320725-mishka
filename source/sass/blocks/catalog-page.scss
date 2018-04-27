@@ -1,4 +1,5 @@
 .catalog-page__head {
+  display: block;
   margin: 0;
   padding: 0;
   padding-top: 75px;
@@ -19,6 +20,12 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog-page {
+    position: relative;
+    top: -39px;
+    z-index: 1;
+  }
+
   .catalog-page__head {
     padding-top: 100px;
     padding-bottom: 110px;
@@ -33,5 +40,11 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 140px;
+  }
+
+  .catalog-page {
+    position: relative;
+    top: -33px;
+    z-index: 1;
   }
 }
