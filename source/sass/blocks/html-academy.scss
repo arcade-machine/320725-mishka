@@ -17,23 +17,18 @@
   margin-right: 30px;
 }
 
+.html-academy__icon {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  fill: #63d1bb;
+}
+
 .html-academy__link {
   position: relative;
   display: block;
   width: 28px;
   height: 35px;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: -5px;
-    left: 0;
-    width: 28px;
-    height: 35px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
 }
 
 @media (min-width: $tablet) {

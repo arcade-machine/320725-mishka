@@ -15,6 +15,24 @@
   text-transform: uppercase;
 }
 
+.telephone-form__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &::after {
+    content: "";
+    top: 10px;
+    right: 8px;
+    position: absolute;
+    width: 26px;
+    height: 25px;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
+
 .telephone-form__input {
   width: 100%;
   min-height: 40px;

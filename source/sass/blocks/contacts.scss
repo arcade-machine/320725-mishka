@@ -1,6 +1,12 @@
 .contacts {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.contacts__flag {
+  position: absolute;
+  display: none;
 }
 
 .contacts__header {
@@ -75,6 +81,12 @@
     width: 100%;
   }
 
+  .contacts__flag {
+    display: block;
+    top: 0;
+    right: 0;
+  }
+
   .contacts__field {
     margin-bottom: 0;
   }
@@ -122,6 +134,12 @@
     padding-top: 140px;
     padding-bottom: 105px;
     flex-direction: column;
+  }
+
+  .contacts__flag {
+    display: block;
+    top: 120px;
+    left: 50px;
   }
 
   .contacts__header {

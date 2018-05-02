@@ -32,6 +32,24 @@
   }
 }
 
+.email-form__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+
+  &::after {
+    content: "";
+    top: 7px;
+    right: 8px;
+    position: absolute;
+    width: 33px;
+    height: 25px;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-mail.svg");
+  }
+}
+
 @media (min-width: $tablet) {
   .email-form {
     position: relative;
