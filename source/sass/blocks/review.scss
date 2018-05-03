@@ -1,7 +1,11 @@
+.review {
+  margin-bottom: 45px;
+}
+
 .review__header {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -12,7 +16,7 @@
 .review__info {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -22,7 +26,7 @@
 .review__from {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -82,10 +86,12 @@
 
   .review__from {
     width: 50%;
+    font-size: 18px;
   }
 
   .review__info {
     font-size: 17px;
+    margin-bottom: 55px;
   }
 
   .review__arrows {
@@ -100,6 +106,7 @@
 
   .review__info {
     width: 785px;
+    margin-bottom: 40px;
   }
 
   .review__from {

@@ -15,7 +15,7 @@
   .options {
     display: flex;
     margin-left: auto;
-    padding-top: 10px;
+    padding-top: 15px;
   }
 
   .options__item:not(:last-child) {
@@ -34,7 +34,7 @@
   .options {
     margin: 0;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 15px;
     font-size: 15px;
     line-height: 24px;
     display: flex;
@@ -46,7 +46,7 @@
   }
 
   .options__item {
-    margin-right: 50px;
+    margin-right: 60px;
 
     &--delivery {
       align-self: baseline;

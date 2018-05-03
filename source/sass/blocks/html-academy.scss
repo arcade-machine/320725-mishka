@@ -1,7 +1,7 @@
 .html-academy {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-top: 29px;
 }
 
 .html-academy__head {
@@ -19,8 +19,8 @@
 
 .html-academy__icon {
   position: absolute;
-  top: -5px;
-  left: 0;
+  top: -18px;
+  left: -10px;
   fill: #63d1bb;
 }
 
@@ -33,7 +33,13 @@
 
 @media (min-width: $tablet) {
   .html-academy {
-    margin-left: auto;
     padding: 0;
+    padding-top: 14px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .html-academy {
+    padding-top: 16px;
   }
 }

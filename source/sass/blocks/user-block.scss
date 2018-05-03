@@ -19,13 +19,13 @@
   position: absolute;
 
   &--search {
-    left: -40px;
-    top: 3px;
+    left: -45px;
+    top: 5px;
     opacity: 0.2;
   }
 
   &--cart {
-    left: -40px;
+    left: -45px;
     top: 3px;
     opacity: 0.2;
   }
@@ -57,6 +57,9 @@
 
   .user-block__item--search {
     width: 82px;
+    padding: 0;
+    padding-top: 30px;
+    padding-left: 75px;
     position: relative;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
@@ -64,8 +67,9 @@
   }
 
   .user-block__item--cart {
+    padding-left: 83px;
     min-height: 90px;
-    min-width: 265px;
+    width: 265px;
     background-color: #ffffff;
   }
 

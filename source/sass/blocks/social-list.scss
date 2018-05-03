@@ -2,15 +2,16 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 32px;
 }
 
 .social-list__icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: -3px;
 
   &--facebook {
-    top: -5px;
+    top: 3px;
   }
 }
 
@@ -27,5 +28,13 @@
   .social-list {
     width: 145px;
     border: none;
+    padding-top: 6px;
+    margin-right: 72px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .social-list {
+    margin-right: 265px;
   }
 }

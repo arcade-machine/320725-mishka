@@ -20,8 +20,8 @@
 
 @media (min-width: $tablet) {
   .main-footer {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 45px;
+    padding-bottom: 15px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -33,17 +33,22 @@
     display: block;
     padding: 0;
     margin: 0;
-    margin-right: 150px;
+    margin-right: 200px;
   }
 
   .main-footer__social {
     padding: 0;
-    margin: 0 auto;
+
   }
 
   .main-footer__html-academy {
     margin: 0;
-    margin-left: auto;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-footer__logo {
+    margin-right: 440px;
   }
 }

@@ -10,7 +10,7 @@
 
 .little-info__icon {
   position: absolute;
-  fill: #149080;
+  fill: #63d1bb;
   top: 0;
   left: 0;
 
@@ -22,7 +22,7 @@
 .little-info__item {
   position: relative;
   width: 100%;
-  min-height: 125px;
+  min-height: 107px;
   padding-top: 34px;
   box-sizing: border-box;
 }
@@ -35,11 +35,12 @@
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 150px;
+    margin-bottom: 97px;
   }
 
   .little-info__item {
     width: 50%;
+    margin-bottom: 40px;
 
     &:nth-child(1) {
       order: 1;
@@ -70,5 +71,6 @@
 @media (min-width: $desktop) {
   .little-info {
     width: 700px;
+    margin-bottom: 103px;
   }
 }

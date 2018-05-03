@@ -12,7 +12,7 @@
 .contacts__header {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -21,7 +21,7 @@
 }
 
 .contacts__about-us {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -36,7 +36,7 @@
 .contacts__field {
   margin: 0;
   margin-right: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0;
   box-sizing: border-box;
   vertical-align: top;
@@ -57,6 +57,7 @@
   text-decoration: none;
   color: #444444;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -71,11 +72,23 @@
 .contacts__map {
   position: relative;
   left: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
+}
+
+.contacts__wrapper {
+  position: relative;
+}
+
+.contacts__icon {
+  position: absolute;
+  top: 29%;
+  left: 40%;
 }
 
 @media (min-width: $tablet) {
   .contacts {
+    padding-bottom: 60px;
+    padding-top: 72px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -83,7 +96,7 @@
 
   .contacts__flag {
     display: block;
-    top: 0;
+    top: 57px;
     right: 0;
   }
 
@@ -94,6 +107,7 @@
   .contacts__header {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 50px;
   }
 
   .contacts__about-us {
@@ -105,16 +119,17 @@
   }
 
   .contacts__value {
-    width: 210px;
+    width: 250px;
 
     &--email {
       width: 200px;
-      margin-right: 55px;
+      margin-right: 50px;
     }
   }
 
   .contacts__map {
     padding-left: 300px;
+    margin-bottom: 45px;
   }
 
   .contacts__button {
@@ -124,16 +139,10 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-}
 
-@media (min-width: $desktop) {
-  .contacts {
-    position: relative;
-    width: 340px;
-    padding-left: 170px;
-    padding-top: 140px;
-    padding-bottom: 105px;
-    flex-direction: column;
+  .contacts__icon {
+    top: 26%;
+    left: 50%;
   }
 
   .contacts__flag {
@@ -141,22 +150,51 @@
     top: 120px;
     left: 50px;
   }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    position: relative;
+    width: 340px;
+    padding-left: 170px;
+    padding-top: 150px;
+    padding-bottom: 105px;
+    flex-direction: column;
+  }
+
+  .contacts__flag {
+    display: block;
+    top: 140px;
+    left: 60px;
+  }
 
   .contacts__header {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
   }
 
   .contacts__field {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
+  }
+
+  .contacts__button {
+    margin: 0;
+    margin-right: 105px;
+  }
+
+  .contacts__about-us {
+    margin-bottom: 77px;
   }
 
   .contacts__map {
     position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 525px;
-    top: 80px;
+    left: 125px;
+    top: -400px;
+  }
+
+  .contacts__icon {
+    top: -260px;
+    left: 175%;
   }
 }
