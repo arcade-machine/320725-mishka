@@ -7,6 +7,7 @@
 .telephone-form__head {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -36,10 +37,13 @@
 .telephone-form__input {
   width: 100%;
   min-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
@@ -53,7 +57,7 @@
 @media (min-width: $tablet) {
   .telephone-form {
     position: relative;
-    padding-top: 65px;
+    padding-top: 22px;
     padding-left: 167px;
     background-color: #f1f1f1;
   }
@@ -62,22 +66,40 @@
     font-size: 17px;
     line-height: 16px;
     position: absolute;
-    top: 77px;
+    top: 37px;
     left: 0;
   }
+  .telephone-form__wrapper::after {
+    right: 26px;
+  }
 
-  .telephone-form__input::placeholder {
-    font-size: 19px;
-    line-height: 18px;
+
+  .telephone-form__input {
+    margin-bottom: 23px;
+    padding-left: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .telephone-form {
     width: 700px;
+    padding-left: 176px;
+  }
+
+  .telephone-form__wrapper::after {
+    right: 8px;
   }
 
   .telephone-form__head {
-    left: 70px;
+    left: 60px;
+  }
+
+  .telephone-form__input {
+    margin-bottom: 25px;
   }
 }

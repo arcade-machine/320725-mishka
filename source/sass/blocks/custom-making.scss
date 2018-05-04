@@ -29,8 +29,9 @@
 
 .custom-making__required {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   padding: 0;
+  padding-top: 14px;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -51,12 +52,19 @@
 
   .custom-making__required {
     margin-left: auto;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop) {
   .custom-making__wrapper {
-    padding-left: 170px;
+    padding-left: 174px;
     width: 700px;
+  }
+
+  .custom-making__required {
+    margin-left: auto;
+    font-size: 17px;
+    padding-top: 16px;
   }
 }

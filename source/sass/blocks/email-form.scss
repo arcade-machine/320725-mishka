@@ -7,6 +7,7 @@
 .email-form__head {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -18,10 +19,13 @@
 .email-form__input {
   width: 100%;
   min-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
@@ -39,8 +43,8 @@
 
   &::after {
     content: "";
-    top: 7px;
-    right: 8px;
+    top: 9px;
+    right: 4px;
     position: absolute;
     width: 33px;
     height: 25px;
@@ -61,22 +65,37 @@
     font-size: 17px;
     line-height: 16px;
     position: absolute;
-    top: 12px;
+    top: 17px;
     left: 0;
   }
 
-  .email-form__input::placeholder {
-    font-size: 19px;
-    line-height: 18px;
+  .email-form__wrapper::after {
+    top: 11px;
+    right: 22px;
+  }
+
+  .email-form__input {
+    padding-left: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .email-form {
     width: 700px;
+    padding-left: 176px;
   }
 
   .email-form__head {
-    left: 70px;
+    left: 60px;
+  }
+
+  .email-form__wrapper::after {
+    top: 9px;
+    right: 5px;
   }
 }
