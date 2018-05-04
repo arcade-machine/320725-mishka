@@ -1,7 +1,7 @@
 .catalog__list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 33px;
   list-style: none;
 }
 
@@ -13,6 +13,10 @@
 @media (min-width: $tablet) {
   .catalog__list {
     margin-bottom: 50px;
+  }
+
+  .catalog__item {
+    margin-bottom: 52px;
   }
 }
 
