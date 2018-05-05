@@ -10,7 +10,11 @@
     <header class="header">
       <div class="header-container">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Магазин товаров ручных работ 'Мишка'">
+        </picture>
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button"></button>
@@ -57,7 +61,11 @@
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" width="260" height="190" alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" alt="Зайчик-попрыгайчик" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="catalog-item__wrapper">
               <div class="catalog-item__about">
@@ -71,7 +79,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" width="260" height="190" alt="Корзинка для белья" src="img/photo-bowl-mobile@1x.jpg">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" alt="Корзинка для белья" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x">
+              </picture>
             </a>
             <div class="catalog-item__wrapper">
               <div class="catalog-item__about">
@@ -85,7 +97,11 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link" href="#">
-              <img class="catalog-item__image" width="260" height="190" alt="Большая корзинка для игрушек" src="./img/photo-toys-mobile@1x.jpg">
+             <picture>
+               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img class="catalog-item__image" alt="Большая корзинка для игрушек" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x">
+             </picture>
             </a>
             <div class="catalog-item__wrapper">
               <div class="catalog-item__about">
@@ -105,7 +121,11 @@
           <h2 class="video__head">Процесс производства</h2>
         </div>
         <div class="video__video">
-          <img class="video__image" width="260" height="150" alt="Видео процесса производства" src="img/video-mobile@1x.jpg">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="video__image" alt="Видео процесса производства" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
           <span class="video__play"></span>
         </div>
         <div class="video__wrapper">
@@ -158,5 +178,6 @@
     </section>
     </div>
   <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
   </body>
 </html>

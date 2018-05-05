@@ -54,6 +54,10 @@
     max-width: 100%;
     min-height: 474px;
   }
+
+  .main-page__image {
+    left: -165px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -70,5 +74,9 @@
     line-height: 57px;
     max-width: 700px;
     min-height: 474px;
+  }
+
+  .main-page__image {
+    left: 0;
   }
 }

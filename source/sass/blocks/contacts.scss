@@ -128,7 +128,7 @@
   }
 
   .contacts__map {
-    padding-left: 300px;
+    margin-left: -20px;
     margin-bottom: 45px;
   }
 
@@ -147,8 +147,8 @@
 
   .contacts__flag {
     display: block;
-    top: 120px;
-    left: 50px;
+    top: 50px;
+    right: 50px;
   }
 }
 
@@ -188,8 +188,9 @@
   }
 
   .contacts__map {
+    margin: 0;
     position: absolute;
-    left: 125px;
+    left: 350px;
     top: -400px;
   }
 
