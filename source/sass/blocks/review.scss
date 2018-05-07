@@ -91,7 +91,7 @@
 
   .review__info {
     font-size: 17px;
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .review__arrows {
@@ -100,6 +100,11 @@
 }
 
 @media (min-width: $desktop) {
+  .review__header {
+    font-size: 53px;
+    margin-bottom: 55px;
+  }
+
   .review {
     width: 875px;
   }

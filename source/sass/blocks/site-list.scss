@@ -96,6 +96,10 @@
     padding-bottom: 30px;
     min-height: 90px;
     box-sizing: border-box;
+
+    &:last-child {
+      padding-left: 21px;
+    }
   }
 
   .site-list__item--catalog {
