@@ -7,7 +7,7 @@
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 67px;
+  padding-top: 70px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
@@ -20,6 +20,9 @@
 .main-page__header {
   overflow: hidden;
   position: relative;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% -17%;
 
   &::before {
     position: absolute;
@@ -44,31 +47,31 @@
 
 @media (min-width: $tablet) {
   .main-page {
-    margin-top: -39px;
+    margin-top: -45px;
     width: 100%;
   }
 
   .main-page__intro {
     margin: 0 auto;
     padding: 0;
-    padding-top: 145px;
+    padding-top: 151px;
     font-size: 43px;
     line-height: 50px;
     max-width: 100%;
-    min-height: 474px;
+    min-height: 473px;
   }
 }
 
 @media (min-width: $desktop) {
   .main-page {
-    margin-top: -33px;
+    margin-top: -38px;
     width: 100%;
   }
 
   .main-page__intro {
     margin: 0 auto;
     padding: 0;
-    padding-top: 145px;
+    padding-top: 150px;
     font-size: 53px;
     line-height: 57px;
     max-width: 700px;

@@ -49,5 +49,14 @@
 
   .arrows__item {
     border: none;
+
+    &--arrow-back::before {
+      top: 14px;
+    }
+
+    &--arrow-forward::before {
+      top: 15px;
+      left: 28px;
+    }
   }
 }

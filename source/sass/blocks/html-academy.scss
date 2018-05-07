@@ -1,7 +1,7 @@
 .html-academy {
   display: flex;
   justify-content: center;
-  padding-top: 29px;
+  padding-top: 27px;
 }
 
 .html-academy__head {
@@ -34,14 +34,13 @@
 @media (min-width: $tablet) {
   .html-academy {
     padding: 0;
-    padding-top: 14px;
+    padding-bottom: 0;
     margin-left: auto;
   }
 }
 
-@media (min-width: $tablet) {
+@media (min-width: $desktop) {
   .html-academy {
-    padding-top: 16px;
     margin-left: auto;
   }
 }
