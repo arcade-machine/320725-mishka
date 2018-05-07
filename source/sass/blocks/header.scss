@@ -4,6 +4,14 @@
   padding-bottom: 20px;
   padding-top: 20px;
   border-top: 1px solid #ececec;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {

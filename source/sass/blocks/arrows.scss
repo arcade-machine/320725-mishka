@@ -9,6 +9,15 @@
   background-color: transparent;
   height: 50px;
   width: 50%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--arrow-back::before {
     position: absolute;

@@ -27,6 +27,14 @@
   padding-top: 17px;
   padding-bottom: 17px;
 
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
     font-size: 17px;
@@ -40,18 +48,23 @@
   position: relative;
   width: 100%;
   height: auto;
+}
 
-  &::after {
-    content: "";
-    top: 9px;
-    right: 4px;
-    position: absolute;
-    width: 33px;
-    height: 25px;
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-mail.svg");
-  }
+.email-form__icon {
+  top: 9px;
+  right: 4px;
+  position: absolute;
+  opacity: 0.2;
+}
+
+.email-form__wrapper:hover .email-form__icon {
+  fill: #62d1ba;
+  opacity: 1.0;
+}
+
+.email-form__input:focus .email-form__icon {
+  fill: #62d1ba;
+  opacity: 1.0;
 }
 
 @media (min-width: $tablet) {

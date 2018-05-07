@@ -22,7 +22,14 @@
   flex-direction: column;
 }
 
+.color-form__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
 .color-form__item {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -37,19 +44,37 @@
   font-size: 17px;
   line-height: 18px;
 
+  &:hover .color-form__control {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active .color-form__control {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &::after {
-    content: "";
-    top: 0;
+.color-form__control {
+    top: -6px;
     left: 0;
     position: absolute;
-    width: 37px;
-    height: 37px;
+    width: 54px;
+    height: 52px;
     border: 2px solid #444444;
-  }
+}
+
+.color-form__input:checked ~ .color-form__control::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 32px;
+  height: 22px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: $tablet) {

@@ -10,6 +10,14 @@
   top: 8px;
   left: -3px;
 
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--facebook {
     top: 3px;
   }

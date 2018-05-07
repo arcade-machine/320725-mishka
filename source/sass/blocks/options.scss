@@ -9,6 +9,24 @@
 .options__link {
   text-decoration: none;
   color: #444444;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.options__link--delivery {
+  &:hover {
+    opacity: 1.0;
+  }
+
+  &:active {
+    opacity: 1.0;
+  }
 }
 
 @media (min-width: $tablet) {

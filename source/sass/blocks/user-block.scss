@@ -41,6 +41,24 @@
   line-height: 24px;
   display: inline-block;
   vertical-align: top;
+
+  &:hover .user-block__text {
+    opacity: 0.6;
+  }
+
+  &:hover .user-block__icon {
+    fill: #56c3b2;
+    opacity: 1.0;
+  }
+
+  &:active .user-block__icon {
+    fill: #56c3b2;
+    opacity: 0.3;
+  }
+
+  &:active .user-block__text {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -73,7 +91,7 @@
     background-color: #ffffff;
   }
 
-  .user-block__text {
+  .user-block__text--search {
     display: none;
   }
 }

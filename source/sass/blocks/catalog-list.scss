@@ -16,13 +16,51 @@
   padding-bottom: 27px;
   box-sizing: border-box;
   color: #ffffff;
+  border-bottom: 5px solid #ffffff;
+
+  &:hover .catalog-list {
+    padding-bottom: 0;
+  }
+
+  &:active .catalog-list {
+    padding-bottom: 0;
+  }
+
+  &:active .catalog-list__info{
+    opacity: 0.3;
+  }
+
+  &:hover .catalog-list__icon {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-list__icon {
+    opacity: 0.3;
+  }
 }
+
 .catalog-list__link--interior {
   background-color: #63d1bb;
+
+  &:hover {
+    border-bottom: 5px solid #63d1bb;
+  }
+
+  &:active {
+    border-bottom: 5px solid #63d1bb;
+  }
 }
 
 .catalog-list__link--toys {
   background-color: #56c3b2;
+
+  &:hover {
+    border-bottom: 5px solid #56c3b2;
+  }
+
+  &:active {
+    border-bottom: 5px solid #56c3b2;
+  }
 }
 
 .catalog-list__icon {

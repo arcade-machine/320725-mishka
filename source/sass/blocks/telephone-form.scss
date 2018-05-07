@@ -20,18 +20,13 @@
   position: relative;
   width: 100%;
   height: auto;
+}
 
-  &::after {
-    content: "";
-    top: 10px;
-    right: 8px;
-    position: absolute;
-    width: 26px;
-    height: 25px;
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-phone.svg");
-  }
+.telephone-form__icon {
+  top: 10px;
+  right: 23px;
+  position: absolute;
+  opacity: 0.2;
 }
 
 .telephone-form__input {
@@ -45,6 +40,14 @@
   padding-top: 17px;
   padding-bottom: 17px;
 
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
+
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
     font-size: 17px;
@@ -52,6 +55,16 @@
     color: #444444;
     opacity: 0.3;
   }
+}
+
+.telephone-form__wrapper:hover .telephone-form__icon {
+  fill: #62d1ba;
+  opacity: 1.0;
+}
+
+.telephone-form__input:focus .telephone-form__icon {
+  fill: #62d1ba;
+  opacity: 1.0;
 }
 
 @media (min-width: $tablet) {
