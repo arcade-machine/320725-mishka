@@ -1,8 +1,9 @@
 .featured {
   position: relative;
-  width: 100%;
+  width: 81%;
   padding-top: 30px;
   padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .featured__header {
@@ -31,7 +32,7 @@
 
 @media (min-width: $tablet) {
   .featured {
-    max-width: 100%;
+    width: 87%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -60,16 +61,17 @@
 
 @media (min-width: $desktop) {
   .featured {
-    max-width: 100%;
+    width: 91.3%;
     padding-top: 125px;
     padding-bottom: 85px;
+    padding-left: 15.2%;
+    box-sizing: border-box;
   }
 
   .featured__wrapper {
-    width: 700px;
+    width: 61%;
     margin: 0;
     padding: 0;
-    padding-left: 170px;
   }
 
   .featured__header {

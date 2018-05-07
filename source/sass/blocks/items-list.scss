@@ -4,14 +4,14 @@
 }
 
 .items-list__image {
+  margin: 0 auto;
   margin-bottom: 27px;
 }
 
 .items-list__price {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 24px;
   padding: 0;
-  padding-left: 65px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -93,14 +93,14 @@
 
   .items-list__price {
     font-size: 20px;
-    padding-left: 70px;
     margin-bottom: 32px;
   }
 }
 
 @media (min-width: $desktop) {
   .items-list {
-    padding-left: 170px;
+    padding-right: 0;
+    width: 31.8%;
   }
 
   .items-list__about {
@@ -112,7 +112,6 @@
   }
 
   .items-list__price {
-    padding-left: 75px;
     margin-bottom: 35px;
   }
 

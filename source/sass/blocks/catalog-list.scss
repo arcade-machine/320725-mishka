@@ -16,7 +16,6 @@
   padding-bottom: 27px;
   box-sizing: border-box;
   color: #ffffff;
-  border-bottom: 5px solid #ffffff;
 
   &:hover .catalog-list {
     padding-bottom: 0;
@@ -87,13 +86,14 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  max-width: 130px;
+  width: 50%;
 }
 
 @media (min-width: $tablet) {
   .catalog-list {
     display: flex;
-    width: 100%;
+    margin: 0 auto;
+    width: 87%;
   }
 
   .catalog-list__item {
@@ -102,12 +102,28 @@
 
   .catalog-list__link {
     padding-top: 30px;
-    padding-bottom: 26px;
+    padding-bottom: 22px;
+    border-bottom: 5px solid #ffffff;
+    min-height: 118px;
+    box-sizing: border-box;
   }
 
   .catalog-list__info {
     padding-left: 55px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-list {
+    display: flex;
+    margin: 0 auto;
+    width: 91.3%;
+  }
+
+  .catalog-list__info {
+    padding-left: 0;
+    width: 26.6%;
   }
 }

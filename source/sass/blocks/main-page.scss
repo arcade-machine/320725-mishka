@@ -1,5 +1,6 @@
 .main-page {
   position: relative;
+  width: 100%;
 }
 
 .main-page__intro {
@@ -12,13 +13,14 @@
   font-size: 27px;
   line-height: 30px;
   min-height: 212px;
-  max-width: 260px;
+  width: 81%;
   text-align: center;
 }
 
 .main-page__header {
   overflow: hidden;
   position: relative;
+
   &::before {
     position: absolute;
     content: "";
@@ -33,7 +35,8 @@
 
 .main-page__image {
   position: absolute;
-  left: -125px;
+  margin: 0 auto;
+  left: -41%;
   top: 5px;
   z-index: -1;
   overflow: hidden;

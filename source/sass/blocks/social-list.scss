@@ -34,15 +34,9 @@
 
 @media (min-width: $tablet) {
   .social-list {
-    width: 145px;
+    width: 22%;
     border: none;
     padding-top: 6px;
-    margin-right: 72px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .social-list {
-    margin-right: 265px;
+    margin: 0 auto;
   }
 }
