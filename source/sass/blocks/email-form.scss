@@ -38,10 +38,6 @@
   padding-top: 17px;
   padding-bottom: 17px;
 
-  &:hover {
-    border-bottom: 2px solid #62d1ba;
-  }
-
   &:focus {
     border-bottom: 2px solid #62d1ba;
   }
@@ -70,12 +66,11 @@
 
 .email-form__wrapper:hover .email-form__icon {
   fill: #62d1ba;
-  opacity: 1.0;
+  opacity: 1;
 }
 
-.email-form__input:focus .email-form__icon {
-  fill: #62d1ba;
-  opacity: 1.0;
+.email-form__wrapper:hover .email-form__input {
+  border-bottom: 2px solid #62d1ba;
 }
 
 @media (min-width: $tablet) {
@@ -131,7 +126,7 @@
 
   .email-form__icon {
     top: 9px;
-    right: 0px;
+    right: 0;
   }
 
   .email-form__wrapper::after {

@@ -60,7 +60,7 @@
 
   &:hover .user-block__icon {
     fill: #56c3b2;
-    opacity: 1.0;
+    opacity: 1;
   }
 
   &:active .user-block__icon {
@@ -88,6 +88,10 @@
 
   .user-block__item {
     padding-top: 31px;
+    background-color: transparent;
+    min-height: 89px;
+    border: none;
+    box-sizing: border-box;
   }
 
   .user-block__icon--search {
@@ -98,13 +102,6 @@
   .user-block__icon--cart {
     left: -51px;
     top: 4px;
-  }
-
-  .user-block__item {
-    background-color: transparent;
-    min-height: 89px;
-    border: none;
-    box-sizing: border-box;
   }
 
   .user-block__item--search {
