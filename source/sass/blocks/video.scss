@@ -179,9 +179,21 @@
     padding-left: 4.5%;
     padding-right: 4.5%;
     margin-bottom: 75px;
+    padding-bottom: 0;
     box-sizing: border-box;
     display: block;
     box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .video__play {
+    left: 43%;
+    top: 44%;
   }
 
   .video__info {
@@ -218,7 +230,6 @@
     padding-right: 57px;
     padding-bottom: 52px;
     box-sizing: border-box;
-    margin-bottom: 75px;
   }
 
   .video__image {
