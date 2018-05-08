@@ -23,7 +23,7 @@
 @media (min-width: $tablet) {
   .form-page {
     margin-top: -45px;
-    padding-bottom: 45px;
+    padding-bottom: 49px;
   }
 
   .form-page__head {
@@ -31,13 +31,14 @@
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 71px;
+    padding-top: 91px;
   }
 }
 
 @media (min-width: $desktop) {
   .form-page {
     margin-top: -39px;
-    padding-bottom: 45px;
+    padding-bottom: 50px;
   }
 
   .form-page__head {

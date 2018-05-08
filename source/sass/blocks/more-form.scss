@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;
   border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    top: 8px;
+    right: 0;
+    background-color: #62d1ba;
+  }
 }
 
 .more-form__head {
@@ -45,17 +56,27 @@
 @media (min-width: $tablet) {
   .more-form {
     position: relative;
-    padding-left: 167px;
-    padding-top: 70px;
-    padding-bottom: 48px;
+    padding-left: 28.5%;
+    padding-right: 6.5%;
+    box-sizing: border-box;
+    padding-top: 68px;
+    padding-bottom: 52px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .more-form__head {
     font-size: 17px;
     line-height: 16px;
     position: absolute;
-    top: 87px;
-    left: 0;
+    top: 85px;
+    left: 51px;
+  }
+
+  .more-form__textarea {
+    padding: 13px;
   }
 
   .more-form__textarea::placeholder {
@@ -66,14 +87,14 @@
 
 @media (min-width: $desktop) {
   .more-form {
-    width: 700px;
-    padding-top: 67px;
-    padding-left: 176px;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
     padding-bottom: 46px;
+    padding-top: 67px;
   }
 
   .more-form__head {
     top: 83px;
-    left: 61px;
+    left: 110px;
   }
 }
