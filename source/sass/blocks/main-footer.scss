@@ -1,15 +1,17 @@
 .main-footer {
+  width: 100%;
   margin: 0;
   padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 9%;
+  padding-right: 9%;
   padding-top: 20px;
   background-color: #f1f1f1;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .main-footer__social {
-  padding-left: 57px;
-  padding-right: 57px;
+  padding-bottom: 15px;
   margin: 0;
 }
 
@@ -19,30 +21,50 @@
 
 @media (min-width: $tablet) {
   .main-footer {
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     box-sizing: border-box;
+    align-items: flex-start;
   }
 
   .main-footer__logo {
     display: block;
     padding: 0;
     margin: 0;
-    margin-right: 150px;
+    margin-right: 20%;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .main-footer__social {
     padding: 0;
-    margin: 0 auto;
   }
 
   .main-footer__html-academy {
     margin: 0;
-    margin-left: auto;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-footer {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+  }
+
+  .main-footer__logo {
+    margin-right: 22%;
   }
 }

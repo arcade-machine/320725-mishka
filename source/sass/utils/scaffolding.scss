@@ -18,6 +18,8 @@ $tablet: 768px;
 
 $desktop: 1150px;
 
+$mobile-only: 767px;
+
 body {
   margin: 0;
   padding: 0;
@@ -34,19 +36,28 @@ body {
   box-sizing: border-box;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.middle-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
   padding: 0;
   white-space: nowrap;
-  border: 0;
   clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @media (min-width: $tablet) {
@@ -55,6 +66,19 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 0 50px;
   }
+
+  .header-container {
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .middle-container {
+    width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -62,5 +86,17 @@ input[type="radio"].visually-hidden {
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
+  }
+
+  .header-container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+
+  .middle-container {
+    width: 1150px;
+    margin: 0 auto;
   }
 }

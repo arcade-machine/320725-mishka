@@ -1,12 +1,24 @@
 .telephone-form {
+  position: relative;
   padding: 0;
   margin: 0;
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    top: 8px;
+    right: 0;
+    background-color: #62d1ba;
+  }
 }
 
 .telephone-form__head {
   margin: 0;
   padding: 0;
+  margin-bottom: 8px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -15,13 +27,33 @@
   text-transform: uppercase;
 }
 
+.telephone-form__wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.telephone-form__icon {
+  top: 10px;
+  right: 7px;
+  position: absolute;
+  opacity: 0.2;
+}
+
 .telephone-form__input {
   width: 100%;
   min-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+  padding-top: 17px;
+  padding-bottom: 17px;
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
@@ -32,34 +64,78 @@
   }
 }
 
+.telephone-form__wrapper:hover .telephone-form__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.telephone-form__wrapper:hover .telephone-form__input {
+  border-bottom: 2px solid #62d1ba;
+}
+
 @media (min-width: $tablet) {
   .telephone-form {
     position: relative;
-    padding-top: 65px;
-    padding-left: 167px;
+    padding-top: 22px;
+    padding-left: 28.5%;
+    padding-right: 6.5%;
     background-color: #f1f1f1;
+    box-sizing: border-box;
+
+    &::before {
+      display: none;
+    }
   }
 
   .telephone-form__head {
     font-size: 17px;
     line-height: 16px;
     position: absolute;
-    top: 77px;
-    left: 0;
+    top: 39px;
+    left: 51px;
   }
 
-  .telephone-form__input::placeholder {
-    font-size: 19px;
-    line-height: 18px;
+  .telephone-form__icon {
+    top: 10px;
+    right: 26px;
+  }
+
+  .telephone-form__wrapper::after {
+    right: 26px;
+  }
+
+
+  .telephone-form__input {
+    margin-bottom: 25px;
+    padding-left: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .telephone-form {
-    width: 700px;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
+  }
+
+  .telephone-form__wrapper::after {
+    right: 8px;
+  }
+
+  .telephone-form__icon {
+    top: 10px;
+    right: 5px;
   }
 
   .telephone-form__head {
-    left: 70px;
+    left: 110px;
+  }
+
+  .telephone-form__input {
+    margin-bottom: 25px;
   }
 }

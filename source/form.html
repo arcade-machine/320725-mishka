@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
     <header class="header">
       <a class="header__logo" href="index.html">
         <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
       </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Открытие меню</button>
-        <ul class="main-navigation__user-block user-block">
-          <li class="user-block__item user-block__item--search">
-            <a class="user-block__link user-block__link--search" href="#">Поиск по сайту</a>
-          </li>
-          <li class="user-block__item user-block__item--cart">
-            <a class="user-block__link user-block__link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+      <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button"></button>
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--catalog">
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item site-list__item--form">
             <a class="site-list__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__user-block user-block">
+          <li class="user-block__item user-block__item--search">
+            <a class="user-block__link user-block__link--search" href="#">
+              <svg class="user-block__icon user-block__icon--search" width="19" height="19"><use xlink:href="img/svg-sprite.svg#icon-search"></use></svg>
+              <span class="user-block__text user-block__text--search">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-block__item user-block__item--cart">
+            <a class="user-block__link user-block__link--cart" href="#">
+              <svg class="user-block__icon user-block__icon--cart" width="19" height="19"><use xlink:href="img/svg-sprite.svg#icon-cart"></use></svg>
+              <span class="user-block__text user-block__text--cart">Корзина: пока пуста</span>
+            </a>
           </li>
         </ul>
         <ul class="main-navigation__options options">
@@ -38,10 +43,10 @@
             <a class="options__link" href="#">Распродажа</a>
           </li>
           <li class="options__item options__item--delivery">
-            <a class="options__link" href=#>Бесплатная доставка по России</a>
+            <a class="options__link options__link--delivery" href=#>Бесплатная доставка по России</a>
           </li>
         </ul>
-        <button class="main-navigation__close" type="button">x</button>
+        <button class="main-navigation__close" type="button"></button>
       </nav>
     </header>
     <main class="form-page">
@@ -52,28 +57,52 @@
         <form action="https://echo.htmlacademy.ru/" class="custom__form custom-making">
           <fieldset class="custom-making__type type-form">
             <legend class="type-form__head">Тип</legend>
-            <input class="visually-hidden" type="radio" id="accessory" name="type" value="accessory" checked>
-            <input class="visually-hidden" type="radio" id="toy" name="type" value="toy">
             <div class="type-form__controls">
-              <label class="type-form__item type-form__item--accessory" for="accessory">Аксессуар для интерьера</label>
-              <label class="type-form__item type-form__itemitem--toy" for="toy">Детская игрушка</label>
+              <label class="type-form__item type-form__item--accessory" for="accessory">
+                <input class="visually-hidden type-form__radio type-form__radio--accessory" type="radio" id="accessory" name="type" value="accessory" checked>
+                Аксессуар для интерьера
+                <span class="type-form__control type-form__control--accessory"></span>
+              </label>
+              <label class="type-form__item type-form__item--toy" for="toy">
+                <input class="visually-hidden type-form__radio type-form__radio--toy" type="radio" id="toy" name="type" value="toy">
+                Детская игрушка
+                <span class="type-form__control type-form__control--toy"></span>
+              </label>
             </div>
           </fieldset>
           <fieldset class="custom-making__color color-form">
             <legend class="color-form__head">Цвет</legend>
-            <input class="visually-hidden" type="checkbox" id="white" name="color" value="white" checked>
-            <input class="visually-hidden" type="checkbox" id="grey" name="color" value="grey" checked>
-            <input class="visually-hidden" type="checkbox" id="tiffany" name="color" value="tiffany">
-            <input class="visually-hidden" type="checkbox" id="black" name="color" value="black">
-            <input class="visually-hidden" type="checkbox" id="pink" name="color" value="pink">
-            <input class="visually-hidden" type="checkbox" id="orange" name="color" value="orange">
             <div class="color-form__controls">
-              <label class="color-form__item color-form__item--white" for="white">Белый</label>
-              <label class="color-form__item color-form__item--grey" for="grey">Серый</label>
-              <label class="color-form__item color-form__item--tiffany" for="tiffany">«Тиффани»</label>
-              <label class="color-form__item color-form__item--black" for="black">Черный</label>
-              <label class="color-form__item color-form__item--pink" for="pink">Розовый</label>
-              <label class="color-form__item color-form__item--pink" for="orange">Оранжевый</label>
+              <label class="color-form__item color-form__item--white" for="white">
+                <input class="visually-hidden color-form__input" type="checkbox" id="white" name="color" value="white" checked>
+                Белый
+                <span class="color-form__control color-form__control--white"></span>
+              </label>
+              <label class="color-form__item color-form__item--grey" for="grey">
+                <input class="visually-hidden color-form__input" type="checkbox" id="grey" name="color" value="grey" checked>
+                Серый
+                <span class="color-form__control color-form__control--grey"></span>
+              </label>
+              <label class="color-form__item color-form__item--tiffany" for="tiffany">
+                <input class="visually-hidden color-form__input" type="checkbox" id="tiffany" name="color" value="tiffany">
+                «Тиффани»
+                <span class="color-form__control color-form__control--tiffany"></span>
+              </label>
+              <label class="color-form__item color-form__item--black" for="black">
+                <input class="visually-hidden color-form__input" type="checkbox" id="black" name="color" value="black">
+                Черный
+                <span class="color-form__control color-form__control--black"></span>
+              </label>
+              <label class="color-form__item color-form__item--pink" for="pink">
+                <input class="visually-hidden color-form__input" type="checkbox" id="pink" name="color" value="pink">
+                Розовый
+                <span class="color-form__control color-form__control--pink"></span>
+              </label>
+              <label class="color-form__item color-form__item--pink" for="orange">
+                <input class="visually-hidden color-form__input" type="checkbox" id="orange" name="color" value="orange">
+                Оранжевый
+                <span class="color-form__control color-form__control--orange"></span>
+              </label>
             </div>
           </fieldset>
           <fieldset class="custom-making__full-name full-name-form">
@@ -94,12 +123,14 @@
           <fieldset class="custom-making__telephone telephone-form">
             <legend class="telephone-form__head">Тел</legend>
             <div class="telephone-form__wrapper">
-              <input class="telephone-form__input telephone-form__input--value" type="tel" id="telephone" placeholder="+7 ХХХ ХХ ХХ*" required>
+              <svg class="telephone-form__icon" width="26" height="25"><use xlink:href="img/svg-sprite.svg#icon-telephone"></use></svg>
+              <input class="telephone-form__input telephone-form__input--value" type="tel" id="telephone" placeholder="+7 ХХХ ХХ ХХ*" required >
             </div>
           </fieldset>
           <fieldset class="custom-making__email email-form">
             <legend class="email-form__head">e-mail</legend>
             <div class="email-form__wrapper">
+              <svg class="email-form__icon" width="33" height="33"><use xlink:href="img/svg-sprite.svg#icon-email"></use></svg>
               <input class="email-form__input email-form__input--value" type="email" id="e-mail" placeholder="Ваш Email*" required>
             </div>
           </fieldset>
@@ -116,26 +147,30 @@
     </main>
       <footer class="main-footer">
         <a class="main-footer__logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
+          <svg width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'"><use xlink:href="img/svg-sprite.svg#footer-logo"></use></svg>
         </a>
         <div class="main-footer__social social-list">
-          <a href="#" class="social-list__item social-list__item--instagram">
+          <a href="#" class="social-list__item">
+            <svg class="social-list__icon social-list__icon--instagram" width="22" height="23"><use xlink:href="img/svg-sprite.svg#icon-instagram"></use></svg>
             <p class="visually-hidden">Instagram</p>
           </a>
-          <a href="#" class="social-list__item social-list__item--facebook">
+          <a href="#" class="social-list__item">
+            <svg class="social-list__icon social-list__icon--facebook" width="16" height="29"><use xlink:href="img/svg-sprite.svg#icon-facebook"></use></svg>
             <p class="visually-hidden">Facebook</p>
           </a>
-          <a href="#" class="social-list__item social-list__item--twitter">
+          <a href="#" class="social-list__item">
+            <svg class="social-list__icon social-list__icon--twitter" width="24" height="21"><use xlink:href="img/svg-sprite.svg#icon-twitter"></use></svg>
+            <p class="visually-hidden">Twitter</p>
             <p class="visually-hidden">Twitter</p>
           </a>
         </div>
         <div class="main-footer__html-academy html-academy">
-          <p class="html-academy__head">Разработано</p>
           <a class="html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="visually-hidden">Html-academy</p>
+            <p class="html-academy__head">Разработано</p>
+            <svg class="html-academy__icon" width="40" height="55"><use xlink:href="img/svg-sprite.svg#icon-academy"></use></svg>
           </a>
         </div>
       </footer>
-    </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

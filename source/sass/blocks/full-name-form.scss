@@ -1,13 +1,25 @@
 .full-name-form {
+  position: relative;
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   border: none;
   display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    top: 8px;
+    right: 0;
+    background-color: #62d1ba;
+  }
 }
 
 .full-name-form__head {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 0;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
@@ -30,10 +42,21 @@
 .full-name-form__input {
   width: 100%;
   min-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 21px;
   background-color: transparent;
   border: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
   border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus {
+    border-bottom: 2px solid #62d1ba;
+  }
 
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
@@ -49,18 +72,24 @@
     position: relative;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 167px;
     margin-bottom: 50px;
+    padding-left: 28.5%;
+    padding-right: 6.5%;
+    box-sizing: border-box;
+
+    &::before {
+      display: none;
+    }
   }
 
   .full-name-form__head {
     top: 12px;
-    left: 0;
+    left: 52px;
     position: absolute;
   }
 
   .full-name-form__header {
-    padding-top: 12px;
+    padding-top: 11px;
     font-size: 19px;
     line-height: 18px;
     margin-right: 25px;
@@ -73,6 +102,9 @@
 
   .full-name-form__input {
     width: 100%;
+    padding-left: 15px;
+    padding-top: 13px;
+    margin-bottom: 29px;
 
     &::placeholder {
       font-size: 19px;
@@ -83,10 +115,12 @@
 
 @media (min-width: $desktop) {
   .full-name-form {
-    width: 700px;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
+    margin-bottom: 51px;
   }
 
   .full-name-form__head {
-    left: 70px;
+    left: 110px;
   }
 }

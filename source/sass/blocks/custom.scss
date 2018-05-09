@@ -1,3 +1,8 @@
+.custom {
+  width: 81%;
+  margin: 0 auto;
+}
+
 .custom__top {
   margin: 0;
   margin-bottom: 25px;
@@ -9,18 +14,26 @@
 }
 
 @media (min-width: $tablet) {
+  .custom {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .custom__top {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop) {
   .custom__top {
-    width: 700px;
-    padding-left: 175px;
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 72px;
+    padding-left: 19.5%;
+    padding-right: 19.5%;
   }
 }

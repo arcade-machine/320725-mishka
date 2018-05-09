@@ -1,9 +1,20 @@
 .color-form {
+  position: relative;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 32px;
   border: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    top: 8px;
+    right: 0;
+    background-color: #62d1ba;
+  }
 }
 
 .color-form__head {
@@ -22,39 +33,96 @@
   flex-direction: column;
 }
 
+.color-form__input {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
 .color-form__item {
+  cursor: pointer;
+  position: relative;
   display: inline-block;
   vertical-align: top;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 60px;
   padding-bottom: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
+
+  &:hover .color-form__control {
+    border: 2px solid #62d1ba;
+  }
+
+  &:active .color-form__control {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.color-form__control {
+  top: 1px;
+  left: 0;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #444444;
+}
+
+.color-form__input:checked ~ .color-form__control::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  width: 26px;
+  height: 26px;
+  background-image: url("../img/icon-tick.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: $tablet) {
   .color-form {
     position: relative;
     padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 167px;
-    margin-bottom: 70px;
+    padding-bottom: 20px;
+    padding-left: 28.5%;
+    padding-right: 6.5%;
+    margin-bottom: 58px;
     background-color: #f1f1f1;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .color-form__control {
+    top: -3px;
+    left: -2px;
+    position: absolute;
+    width: 50px;
+    height: 48px;
+  }
+
+  .color-form__input:checked ~ .color-form__control::after {
+    top: 13px;
+    left: 9px;
+    width: 34px;
+    height: 26px;
   }
 
   .color-form__head {
     position: absolute;
-    top: 60px;
-    left: 0;
+    top: 65px;
+    left: 51px;
   }
 
   .color-form__controls {
@@ -65,14 +133,46 @@
 
   .color-form__item {
     box-sizing: border-box;
-    width: 250px;
+    width: 210px;
     font-size: 19px;
     line-height: 18px;
+    margin-bottom: 35px;
+    margin-right: 52px;
+    padding-left: 80px;
+
+    &::after {
+      top: -2px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop) {
+  .color-form {
+    padding-left: 19.7%;
+    margin-bottom: 57px;
+  }
+
+  .color-form__item {
+    margin-right: 52px;
+
+    &:nth-child(2n) {
+      margin-right: 52px;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
   .color-form__head {
-    left: 70px;
+    position: absolute;
+    top: 63px;
+    left: 110px;
   }
 }

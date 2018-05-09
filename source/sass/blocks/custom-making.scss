@@ -29,8 +29,9 @@
 
 .custom-making__required {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   padding: 0;
+  padding-top: 14px;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -39,6 +40,8 @@
 
 @media (min-width: $tablet) {
   .custom-making__wrapper {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
     display: flex;
   }
 
@@ -51,12 +54,20 @@
 
   .custom-making__required {
     margin-left: auto;
+    margin-bottom: 19px;
+    font-size: 17px;
   }
 }
 
 @media (min-width: $desktop) {
   .custom-making__wrapper {
-    padding-left: 170px;
-    width: 700px;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
+  }
+
+  .custom-making__required {
+    margin-left: auto;
+    font-size: 17px;
+    padding-top: 16px;
   }
 }

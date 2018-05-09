@@ -8,10 +8,45 @@
   list-style: none;
 }
 
+.little-info__icon {
+  position: absolute;
+  fill: #63d1bb;
+  top: 0;
+  left: 0;
+
+  &--local-manufacturer {
+    left: -7px;
+  }
+
+  &--material {
+    top: -3px;
+    left: 7px;
+  }
+
+  &--style {
+    top: -2px;
+  }
+
+  &--likes {
+    top: 2px;
+    left: 6px;
+  }
+
+  &--with-love {
+    left: 2px;
+  }
+
+  &--gift-wrap {
+    top: -1px;
+    left: 2px;
+  }
+}
+
 .little-info__item {
+  position: relative;
   width: 100%;
-  min-height: 125px;
-  padding-top: 60px;
+  min-height: 106px;
+  padding-top: 34px;
   box-sizing: border-box;
 }
 
@@ -23,11 +58,12 @@
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 150px;
+    margin-bottom: 102px;
   }
 
   .little-info__item {
     width: 50%;
+    margin-bottom: 37px;
 
     &:nth-child(1) {
       order: 1;
@@ -58,5 +94,6 @@
 @media (min-width: $desktop) {
   .little-info {
     width: 700px;
+    margin-bottom: 108px;
   }
 }

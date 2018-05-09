@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;
   border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 77%;
+    top: 8px;
+    right: 0;
+    background-color: #62d1ba;
+  }
 }
 
 .more-form__head {
@@ -19,10 +30,19 @@
 .more-form__textarea {
   box-sizing: border-box;
   width: 100%;
+  padding: 14px;
   min-height: 140px;
   max-height: 540px;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   resize: vertical;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
 
   &::placeholder {
     font-family: "open-sans", "Arial", sans-serif;
@@ -36,17 +56,27 @@
 @media (min-width: $tablet) {
   .more-form {
     position: relative;
-    padding-left: 167px;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-left: 28.5%;
+    padding-right: 6.5%;
+    padding-top: 68px;
+    padding-bottom: 52px;
+    box-sizing: border-box;
+
+    &::before {
+      display: none;
+    }
   }
 
   .more-form__head {
     font-size: 17px;
     line-height: 16px;
     position: absolute;
-    top: 62px;
-    left: 0;
+    top: 85px;
+    left: 51px;
+  }
+
+  .more-form__textarea {
+    padding: 13px;
   }
 
   .more-form__textarea::placeholder {
@@ -57,10 +87,14 @@
 
 @media (min-width: $desktop) {
   .more-form {
-    width: 700px;
+    padding-left: 19.7%;
+    padding-right: 19.7%;
+    padding-bottom: 46px;
+    padding-top: 67px;
   }
 
   .more-form__head {
-    left: 70px;
+    top: 83px;
+    left: 110px;
   }
 }

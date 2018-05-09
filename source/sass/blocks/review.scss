@@ -1,7 +1,11 @@
+.review {
+  margin-bottom: 45px;
+}
+
 .review__header {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -12,7 +16,7 @@
 .review__info {
   margin: 0;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -22,7 +26,7 @@
 .review__from {
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -35,8 +39,10 @@
 }
 
 .review__user {
+  display: inline-block;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
   font-family: "open-sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 17px;
@@ -45,7 +51,7 @@
 }
 
 .review__arrows {
-  margin-bottom: 38px;
+  margin-bottom: 37px;
 }
 
 @media (min-width: $tablet) {
@@ -69,7 +75,7 @@
     position: absolute;
     z-index: -1;
     left: -50px;
-    top: -85px;
+    top: -77px;
   }
 
   .review__write-us {
@@ -82,10 +88,12 @@
 
   .review__from {
     width: 50%;
+    font-size: 18px;
   }
 
   .review__info {
     font-size: 17px;
+    margin-bottom: 58px;
   }
 
   .review__arrows {
@@ -94,12 +102,18 @@
 }
 
 @media (min-width: $desktop) {
+  .review__header {
+    font-size: 53px;
+    margin-bottom: 50px;
+  }
+
   .review {
     width: 875px;
   }
 
   .review__info {
     width: 785px;
+    margin-bottom: 40px;
   }
 
   .review__from {

@@ -1,12 +1,12 @@
 .catalog-page__head {
   margin: 0;
   padding: 0;
-  padding-top: 75px;
+  padding-top: 69px;
   padding-bottom: 75px;
   padding-left: 30px;
   padding-right: 30px;
   display: inline-block;
-  min-height: 180px;
+  min-height: 170px;
   width: 100%;
   box-sizing: border-box;
   background-color: #f1f1f1;
@@ -19,10 +19,16 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog-page {
+    position: relative;
+    top: -45px;
+    z-index: 1;
+  }
+
   .catalog-page__head {
-    padding-top: 100px;
-    padding-bottom: 110px;
-    margin-bottom: 90px;
+    padding-top: 93px;
+    padding-bottom: 80px;
+    margin-bottom: 46px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -33,5 +39,11 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 140px;
+  }
+
+  .catalog-page {
+    position: relative;
+    top: -38px;
+    z-index: 1;
   }
 }

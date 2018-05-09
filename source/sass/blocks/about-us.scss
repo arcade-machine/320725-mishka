@@ -1,12 +1,13 @@
 .about-us {
-  padding-top: 30px;
-  padding-bottom: 40px;
+  width: 81%;
+  margin: 0 auto;
+  padding-top: 27px;
 }
 
 .about-us__header {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -15,13 +16,14 @@
 }
 
 .about-us__list {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet) {
   .about-us {
-    padding-top: 65px;
-    padding-bottom: 85px;
+    width: 87%;
+    padding-top: 68px;
+    padding-bottom: 45px;
   }
 
   .about-us__header {
@@ -29,12 +31,16 @@
     line-height: 50px;
     padding: 0;
     margin: 0;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop) {
   .about-us {
-    padding-left: 170px;
+    width: 91.3%;
+    padding-left: 15%;
+    padding-bottom: 100px;
+    box-sizing: border-box;
   }
 
   .about-us__header {

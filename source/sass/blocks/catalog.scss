@@ -1,18 +1,31 @@
+.catalog {
+  width: 81%;
+  margin: 0 auto;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
+  padding-top: 33px;
   list-style: none;
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   border: 1px solid #ededed;
 }
 
 @media (min-width: $tablet) {
+  .catalog {
+    width: 87%;
+  }
+
   .catalog__list {
     margin-bottom: 50px;
+  }
+
+  .catalog__item {
+    margin-bottom: 52px;
   }
 }
 
@@ -20,5 +33,9 @@
   .catalog__list {
     display: flex;
     width: 100%;
+  }
+
+  .catalog {
+    width: 91.3%;
   }
 }
