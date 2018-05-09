@@ -2,7 +2,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #ececec;
 }
 
 .main-navigation__toggle {
@@ -10,15 +9,16 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  right: 0;
-  width: 0;
-  height: 0;
+  top: -48px;
+  right: 9%;
+  width: 21px;
+  height: 15px;
 
   &::before {
     content: "";
     position: absolute;
-    top: -50px;
-    left: -40px;
+    top: 0;
+    left: 0;
     width: 21px;
     height: 15px;
     background-image: url("../img/icon-menu-open.svg");
@@ -31,48 +31,54 @@
   position: absolute;
   background-color: transparent;
   border: none;
-  width: 0;
-  height: 0;
+  width: 23px;
+  height: 23px;
+  top: -55px;
+  right: 9%;
 
   &::before {
     content: "";
     position: absolute;
     width: 23px;
     height: 23px;
-    top: -55px;
-    left: 270px;
+    top: 0;
+    left: 0;
     background-image: url("../img/icon-menu-close.svg");
     background-repeat: no-repeat;
   }
 }
 
 @media (max-width: $mobile-only) {
-  .main-navigation--closed .main-navigation__list {
-    display: none;
-  }
+  .main-navigation--closed {
+    & .main-navigation__list {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__user-block {
-    display: none;
-  }
+    & .main-navigation__user-block {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__options {
-    display: none;
-  }
+    .main-navigation__options {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__close {
-    display: none;
+    & .main-navigation__close {
+      display: none;
+    }
   }
 
   .main-navigation--opened .main-navigation__toggle {
     display: none;
   }
 
-  .main-navigation--nojs .main-navigation__close {
-    display: none;
-  }
+  .main-navigation--nojs {
+    & .main-navigation__close {
+      display: none;
+    }
 
-  .main-navigation--nojs .main-navigation__toggle {
-    display: none;
+    & .main-navigation__toggle {
+      display: none;
+    }
   }
 }
 
@@ -81,12 +87,12 @@
     border: none;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 87%;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .main-navigation__user-block {
-    margin-left: auto;
     order: -1;
   }
 
@@ -104,6 +110,10 @@
 }
 
 @media (min-width: $desktop) {
+  .main-navigation {
+    width: 91.3%;
+  }
+
   .main-navigation__list {
     order: -2;
   }

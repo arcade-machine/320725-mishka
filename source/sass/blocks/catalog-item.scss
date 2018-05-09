@@ -1,10 +1,36 @@
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-item:hover {
+  box-shadow: 0 6px 10px 2px rgba(0, 0, 0, 0.1);
+
+  & .catalog-item__head {
+    opacity: 0.6;
+  }
+
+  & .catalog-item__icon {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+}
+
+.catalog-item:active {
+  box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
 .catalog-item__link {
   text-decoration: none;
 }
 
 .catalog-item__image {
-
-  margin-bottom: 25px;
+  display: inline-block;
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  max-width: 100%;
+  height: auto;
 }
 
 .catalog-item__head {
@@ -28,8 +54,8 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 4px;
-  margin-bottom: 20px;
+  padding-top: 5px;
+  margin-bottom: 19px;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 30px;
@@ -46,18 +72,13 @@
   font-size: 15px;
   line-height: 24px;
   border-top: 1px solid #ececec;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    width: 21px;
-    height: 20px;
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
+.catalog-item__icon {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  opacity: 0.2;
 }
 
 @media (min-width: $tablet) {
@@ -97,10 +118,10 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    padding-left: 30px;
+    padding-left: 28px;
     padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 24px;
+    padding-top: 25px;
+    padding-bottom: 29px;
     width: 50%;
     height: 100%;
     box-sizing: border-box;
@@ -109,8 +130,14 @@
   .catalog-item__price {
     margin-top: auto;
     padding-top: 20px;
+    padding-left: 4px;
     font-size: 17px;
     line-height: 24px;
+  }
+
+  .catalog-item__icon {
+    bottom: 4px;
+    right: 2px;
   }
 }
 
@@ -124,7 +151,7 @@
     margin: 0;
     margin-right: 50px;
     padding: 0;
-    width: 315px;
+    width: 34.7%;
     min-height: 635px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -141,7 +168,7 @@
   .catalog-item__wrapper {
     width: 100%;
     max-height: 35%;
-    padding-top: 50px;
+    padding-top: 54px;
     padding-left: 25px;
   }
 
@@ -150,7 +177,7 @@
   }
 
   .catalog-item__price {
-   padding-top: 15px;
+    padding-top: 15px;
   }
 
   .catalog-item__image {

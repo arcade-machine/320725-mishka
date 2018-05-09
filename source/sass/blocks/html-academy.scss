@@ -1,7 +1,8 @@
 .html-academy {
   display: flex;
-  justify-content: center;
-  padding-top: 29px;
+  padding-top: 27px;
+  padding-left: 39px;
+  padding-right: 40px;
 }
 
 .html-academy__head {
@@ -15,31 +16,50 @@
   line-height: 18px;
   color: #000000;
   margin-right: 30px;
+  border: none;
+  position: relative;
 }
 
 .html-academy__icon {
   position: absolute;
-  top: -18px;
-  left: -10px;
+  top: -15px;
+  right: -33px;
   fill: #63d1bb;
 }
 
 .html-academy__link {
   position: relative;
   display: block;
-  width: 28px;
-  height: 35px;
-}
+  text-decoration: none;
 
-@media (min-width: $tablet) {
-  .html-academy {
-    padding: 0;
-    padding-top: 14px;
+  &:hover .html-academy__icon {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 @media (min-width: $tablet) {
   .html-academy {
-    padding-top: 16px;
+    padding: 0;
+    padding-bottom: 0;
+    margin-left: auto;
+  }
+
+  .html-academy__head {
+    margin-right: 56px;
+  }
+
+  .html-academy__icon {
+    top: -15px;
+    right: -5px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .html-academy {
+    margin-left: auto;
   }
 }

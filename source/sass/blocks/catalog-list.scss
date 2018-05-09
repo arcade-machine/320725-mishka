@@ -10,19 +10,56 @@
   display: block;
   min-height: 103px;
   text-decoration: none;
-  padding-top: 27px;
-  padding-left: 30px;
+  padding-top: 26px;
+  padding-left: 29px;
   padding-right: 30px;
   padding-bottom: 27px;
   box-sizing: border-box;
   color: #ffffff;
+
+  &:hover .catalog-list {
+    padding-bottom: 0;
+  }
+
+  &:active .catalog-list {
+    padding-bottom: 0;
+  }
+
+  &:active .catalog-list__info {
+    opacity: 0.3;
+  }
+
+  &:hover .catalog-list__icon {
+    opacity: 0.7;
+  }
+
+  &:active .catalog-list__icon {
+    opacity: 0.3;
+  }
 }
+
 .catalog-list__link--interior {
   background-color: #63d1bb;
+
+  &:hover {
+    border-bottom: 5px solid #63d1bb;
+  }
+
+  &:active {
+    border-bottom: 5px solid #63d1bb;
+  }
 }
 
 .catalog-list__link--toys {
   background-color: #56c3b2;
+
+  &:hover {
+    border-bottom: 5px solid #56c3b2;
+  }
+
+  &:active {
+    border-bottom: 5px solid #56c3b2;
+  }
 }
 
 .catalog-list__icon {
@@ -31,14 +68,14 @@
 
   &--interior {
     fill: #149080;
-    top: 23%;
-    right: 13%;
+    top: 22%;
+    right: 11%;
   }
 
   &--toys {
     fill: #149080;
-    top: 23%;
-    right: 10%;
+    top: 20%;
+    right: 8%;
   }
 }
 
@@ -49,13 +86,14 @@
   line-height: 24px;
   margin: 0;
   padding: 0;
-  max-width: 130px;
+  width: 50%;
 }
 
 @media (min-width: $tablet) {
   .catalog-list {
     display: flex;
-    width: 100%;
+    margin: 0 auto;
+    width: 87%;
   }
 
   .catalog-list__item {
@@ -63,13 +101,49 @@
   }
 
   .catalog-list__link {
-    padding-top: 30px;
-    padding-bottom: 26px;
+    padding-top: 28px;
+    padding-bottom: 22px;
+    border-bottom: 5px solid #ffffff;
+    min-height: 118px;
+    box-sizing: border-box;
+    padding-left: 36px;
   }
 
   .catalog-list__info {
-    padding-left: 55px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .catalog-list__icon--interior {
+    top: 26%;
+    right: 11%;
+  }
+
+  .catalog-list__icon--toys {
+    top: 27%;
+    right: 10%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-list {
+    display: flex;
+    margin: 0 auto;
+    width: 91.3%;
+  }
+
+  .catalog-list__icon--interior {
+    top: 26%;
+    right: 7%;
+  }
+
+  .catalog-list__icon--toys {
+    top: 27%;
+    right: 7%;
+  }
+
+  .catalog-list__info {
+    padding-left: 0;
+    width: 26.6%;
   }
 }

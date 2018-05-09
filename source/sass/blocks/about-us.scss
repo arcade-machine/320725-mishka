@@ -1,4 +1,6 @@
 .about-us {
+  width: 81%;
+  margin: 0 auto;
   padding-top: 27px;
 }
 
@@ -14,12 +16,13 @@
 }
 
 .about-us__list {
-  margin-bottom: 33px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet) {
   .about-us {
-    padding-top: 65px;
+    width: 87%;
+    padding-top: 68px;
     padding-bottom: 45px;
   }
 
@@ -34,8 +37,10 @@
 
 @media (min-width: $desktop) {
   .about-us {
-    padding-left: 174px;
+    width: 91.3%;
+    padding-left: 15%;
     padding-bottom: 100px;
+    box-sizing: border-box;
   }
 
   .about-us__header {

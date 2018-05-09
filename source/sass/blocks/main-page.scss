@@ -1,18 +1,19 @@
 .main-page {
   position: relative;
+  width: 100%;
 }
 
 .main-page__intro {
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding-top: 68px;
+  padding-top: 70px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
   min-height: 212px;
-  max-width: 260px;
+  width: 81%;
   text-align: center;
 }
 
@@ -42,15 +43,16 @@
 
 .main-page__image {
   position: absolute;
-  left: -125px;
-  top: 5px;
+  margin: 0 auto;
+  left: -41%;
+  top: -18px;
   z-index: -1;
   overflow: hidden;
 }
 
 @media (min-width: $tablet) {
   .main-page {
-    margin-top: -39px;
+    margin-top: -45px;
     width: 100%;
   }
 
@@ -66,11 +68,11 @@
   .main-page__intro {
     margin: 0 auto;
     padding: 0;
-    padding-top: 145px;
+    padding-top: 151px;
     font-size: 43px;
     line-height: 50px;
     max-width: 100%;
-    min-height: 474px;
+    min-height: 473px;
   }
 
   .main-page__image {
@@ -80,7 +82,7 @@
 
 @media (min-width: $desktop) {
   .main-page {
-    margin-top: -33px;
+    margin-top: -38px;
     width: 100%;
   }
 
@@ -96,7 +98,7 @@
   .main-page__intro {
     margin: 0 auto;
     padding: 0;
-    padding-top: 145px;
+    padding-top: 150px;
     font-size: 53px;
     line-height: 57px;
     max-width: 700px;
