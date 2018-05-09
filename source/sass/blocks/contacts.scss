@@ -121,6 +121,16 @@
   max-width: 82%;
 }
 
+.contacts__zig-zag {
+  position: absolute;
+  width: 120%;
+  height: 6px;
+  top: 0;
+  left: -30px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 100%;
+}
+
 @media (min-width: $tablet) {
   .contacts {
     width: 100%;
@@ -199,6 +209,10 @@
     top: 26.5%;
     left: 47%;
   }
+
+  .contacts__zig-zag {
+    height: 16px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -266,5 +280,9 @@
   .contacts__icon {
     top: -260px;
     left: 64%;
+  }
+
+  .contacts__zig-zag {
+    height: 23px;
   }
 }

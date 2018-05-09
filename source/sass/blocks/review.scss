@@ -1,17 +1,6 @@
 .review {
   margin-bottom: 45px;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -45px;
-    left: -31px;
-    width: 123%;
-    height: 23px;
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-repeat: repeat-x;
-  }
 }
 
 .review__header {
