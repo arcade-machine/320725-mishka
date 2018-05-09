@@ -5,7 +5,7 @@
 
 .items-list__image {
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 
 .items-list__price {
@@ -68,7 +68,7 @@
     position: absolute;
     display: block;
     right: 0;
-    top: 150px;
+    top: 153px;
   }
 
   .items-list__about {
@@ -113,7 +113,7 @@
   }
 
   .items-list__spec {
-    margin-bottom: 111px;
+    margin-bottom: 108px;
   }
 
   .items-list__price {
@@ -121,7 +121,8 @@
   }
 
   .items-list__image {
-    top: 240px;
+    top: 71px;
     left: 525px;
+    z-index: -1;
   }
 }

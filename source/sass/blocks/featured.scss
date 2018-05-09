@@ -4,6 +4,17 @@
   padding-top: 27px;
   padding-bottom: 41px;
   margin: 0 auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: -31px;
+    width: 123%;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+  }
 }
 
 .featured__header {
@@ -35,6 +46,11 @@
     width: 87%;
     padding-top: 47px;
     padding-bottom: 50px;
+
+    &::after {
+      left: -53px;
+      width: 115%;
+    }
   }
 
   .featured__header {
