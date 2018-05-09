@@ -92,6 +92,18 @@
     min-height: 89px;
     border: none;
     box-sizing: border-box;
+
+    &--search {
+      width: 24%;
+      padding: 0;
+      padding-top: 31px;
+      padding-left: 72px;
+      position: relative;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      background-color: #ffffff;
+      box-sizing: border-box;
+    }
   }
 
   .user-block__icon--search {
@@ -102,18 +114,6 @@
   .user-block__icon--cart {
     left: -51px;
     top: 4px;
-  }
-
-  .user-block__item--search {
-    width: 24%;
-    padding: 0;
-    padding-top: 31px;
-    padding-left: 72px;
-    position: relative;
-    border-left: 1px solid #ececec;
-    border-right: 1px solid #ececec;
-    background-color: #ffffff;
-    box-sizing: border-box;
   }
 
   .user-block__item--cart {

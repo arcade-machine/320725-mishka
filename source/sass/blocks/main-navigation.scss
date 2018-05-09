@@ -49,32 +49,36 @@
 }
 
 @media (max-width: $mobile-only) {
-  .main-navigation--closed .main-navigation__list {
-    display: none;
-  }
+  .main-navigation--closed {
+    & .main-navigation__list {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__user-block {
-    display: none;
-  }
+    & .main-navigation__user-block {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__options {
-    display: none;
-  }
+    .main-navigation__options {
+      display: none;
+    }
 
-  .main-navigation--closed .main-navigation__close {
-    display: none;
+    & .main-navigation__close {
+      display: none;
+    }
   }
 
   .main-navigation--opened .main-navigation__toggle {
     display: none;
   }
 
-  .main-navigation--nojs .main-navigation__close {
-    display: none;
-  }
+  .main-navigation--nojs {
+    & .main-navigation__close {
+      display: none;
+    }
 
-  .main-navigation--nojs .main-navigation__toggle {
-    display: none;
+    & .main-navigation__toggle {
+      display: none;
+    }
   }
 }
 
