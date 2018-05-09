@@ -12,11 +12,11 @@
   cursor: pointer;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
 
   &--arrow-back::before {
