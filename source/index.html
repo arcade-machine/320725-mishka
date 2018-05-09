@@ -59,11 +59,6 @@
       <div class="main-page__header">
         <div class="middle-container">
         <h2 class="main-page__intro">Милые штуки ручной<br> работы для дома</h2>
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg 1x, img/hero-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg 1x, img/hero-tablet@2x.jpg 2x">
-          <img class="main-page__image" src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg 2x" alt="Милые штучки ручной работы">
-        </picture>
         <ul class="main-page__catalog catalog-list">
           <li class="catalog-list__item">
             <a class="catalog-list__link catalog-list__link--interior" href="#">
@@ -116,6 +111,11 @@
           </tr>
         </table>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x,">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x,">
           <img class="items-list__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
         </picture>
@@ -154,6 +154,7 @@
         <div class="about-us__review review">
           <h2 class="review__header">Отзывы</h2>
           <picture>
+            <source type="image/webp" srcset="img/webp/review@1x.webp 1x, img/webp/review@2x.webp 2x">
             <img class="review__image" alt="Отзывы" src="img/review@1x.jpg" srcset="img/review@2x.jpg 2x">
           </picture>
           <p class="review__info">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -178,6 +179,10 @@
         </div>
         <div class="contacts__wrapper">
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
+
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин товаров ручных работ 'Мишка'">
