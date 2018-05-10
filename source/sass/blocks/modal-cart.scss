@@ -18,7 +18,7 @@
   z-index: 2;
   background-color: #ffffff;
   border-top: 2px solid #c7c7c7;
-  box-shadow: 0 7px 5px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 7px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .modal-cart__show {
@@ -167,7 +167,7 @@
     line-height: 30px;
   }
 
-  .modal-cart .button{
+  .modal-cart .button {
     width: 64%;
     margin-left: 18%;
     margin-right: 18%;

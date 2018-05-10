@@ -65,11 +65,11 @@
   cursor: pointer;
 
   &:hover {
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
 
   &:active {
-    transform:scale(0.8);
+    transform: scale(0.8);
   }
 
   &::before {
