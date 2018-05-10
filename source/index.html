@@ -117,7 +117,7 @@
           <img class="items-list__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
         </picture>
         <p class="items-list__price">Цена: 990 руб.</p>
-        <a href="#" class="button items-list__button">Заказать</a>
+        <a href="#" class="button items-list__button modal">Заказать</a>
         <span class="featured__zig-zag"></span>
       </div>
       </section>
@@ -220,19 +220,28 @@
         </div>
       </footer>
       <section class="modal-cart">
+        <button class="modal-cart__close" type="button"></button>
+        <div class="modal-cart__open">
         <h3 class="modal-cart__header">Добавить в корзину</h3>
         <p class="modal-cart__type">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form form">
-          <input type="radio" class="visually-hidden" id="S-size" name="cart" value="S">
-          <input type="radio" class="visually-hidden" id="M-size" name="cart" value="M">
-          <input type="radio" class="visually-hidden" id="L-size" name="cart" value="L">
-          <div class="form-controls">
-            <label class="form-controls__item form-controls__item--S" for="S-size">S</label>
-            <label class="form-controls__item form-controls__item--M" for="M-size">M</label>
-            <label class="form-controls__item form-controls__item--L" for="L-size">L</label>
+        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form">
+          <div class="modal-cart__controls">
+            <label class="modal-cart__item modal-cart__item--S" for="S-size">
+              <input type="radio" class="modal-cart__radio" id="S-size" name="cart" value="S" checked>
+              S
+            </label>
+            <label class="modal-cart__item modal-cart__item--M" for="M-size">
+              <input type="radio" class="modal-cart__radio" id="M-size" name="cart" value="M">
+              M
+            </label>
+            <label class="modal-cart__item modal-cart__item--L" for="L-size">
+              <input type="radio" class="modal-cart__radio" id="L-size" name="cart" value="L">
+              L
+            </label>
           </div>
           <button type="submit" class="button modal-cart__button">Добавить</button>
         </form>
+        </div>
       </section>
     </main>
     <script src="js/script.js"></script>

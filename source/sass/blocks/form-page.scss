@@ -1,5 +1,7 @@
 .form-page {
   padding-bottom: 55px;
+  position: relative;
+  overflow: hidden;
 }
 
 .form-page__head {
@@ -20,6 +22,10 @@
   text-align: center;
 }
 
+.form-page__zigzag {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .form-page {
     margin-top: -45px;
@@ -32,6 +38,18 @@
     line-height: 50px;
     margin-bottom: 71px;
     padding-top: 91px;
+  }
+
+  .form-page__zigzag {
+    display: block;
+    position: absolute;
+    width: 104%;
+    height: 18px;
+    top: 12%;
+    left: -15px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 100%;
+    overflow: hidden;
   }
 }
 
@@ -47,5 +65,10 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 160px;
+  }
+
+  .form-page__zigzag {
+    height: 28px;
+    top: 11%;
   }
 }

@@ -18,11 +18,16 @@
   text-align: center;
 }
 
+.catalog-page__zigzag {
+  display: none;
+}
+
 @media (min-width: $tablet) {
   .catalog-page {
     position: relative;
     top: -45px;
     z-index: 1;
+    overflow: hidden;
   }
 
   .catalog-page__head {
@@ -31,6 +36,18 @@
     margin-bottom: 46px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .catalog-page__zigzag {
+    display: block;
+    position: absolute;
+    width: 104%;
+    height: 18px;
+    top: 9.5%;
+    left: -15px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 100%;
+    overflow: hidden;
   }
 }
 
@@ -45,5 +62,10 @@
     position: relative;
     top: -38px;
     z-index: 1;
+  }
+
+  .catalog-page__zigzag {
+    height: 28px;
+    top: 13%;
   }
 }

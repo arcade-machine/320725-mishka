@@ -65,13 +65,11 @@
   cursor: pointer;
 
   &:hover {
-    width: 120px;
-    height: 93px;
+    transform:scale(1.2);
   }
 
   &:active {
-    width: 80px;
-    height: 61px;
+    transform:scale(0.8);
   }
 
   &::before {
@@ -108,7 +106,7 @@
     padding: 0;
     padding-left: 6.5%;
     padding-right: 6.5%;
-    padding-bottom: 45px;
+    padding-bottom: 64px;
     box-sizing: border-box;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
@@ -126,7 +124,6 @@
     width: 88%;
     margin-bottom: 0;
     padding: 0;
-    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     border: none;
@@ -140,7 +137,6 @@
   .video__video {
     order: -1;
     width: 100%;
-    height: 455px;
   }
 
   .video__icon {
@@ -149,7 +145,8 @@
   }
 
   .video__image {
-    margin-bottom: 18px;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .video__header {
@@ -157,7 +154,7 @@
     padding: 0;
     padding-left: 5.5%;
     padding-right: 5.5%;
-    padding-top: 35px;
+    padding-top: 30px;
     border-top: 1px solid #ededed;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
