@@ -102,7 +102,6 @@ var sizeLengthCache = {};
 var DPR = window.devicePixelRatio;
 var units = {
 px: 1,
-in": 96
 };
 var anchor = document.createElement( "a" );
 
@@ -554,7 +553,7 @@ pos += 1;
 
 while (true) {
 collectCharacters(regexLeadingCommasOrSpaces);
-dates and abort these steps.
+
 if (pos >= inputLength) {
 return candidates; // (we're done, this is the sole return path)
 }
@@ -768,7 +767,6 @@ isSupportTestReady = true;
 }
 
 // using pf.qsa instead of dom traversing does scale much better,
-/ especially on sites mixing responsive and non-responsive images
 pf.selShort = "picture>img,img[srcset]";
 pf.sel = pf.selShort;
 pf.cfg = cfg;
