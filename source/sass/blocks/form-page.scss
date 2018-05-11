@@ -40,13 +40,16 @@
     padding-top: 91px;
   }
 
+  .form-page__top {
+    position: relative;
+  }
+
   .form-page__zigzag {
     display: block;
     position: absolute;
     width: 104%;
     height: 18px;
-    top: 12%;
-    left: -15px;
+    bottom: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 100%;
     overflow: hidden;
@@ -55,20 +58,20 @@
 
 @media (min-width: $desktop) {
   .form-page {
-    margin-top: -39px;
+    margin-top: -38px;
     padding-bottom: 50px;
   }
 
   .form-page__head {
-    padding-top: 93px;
-    min-height: 185px;
+    padding-top: 92px;
+    min-height: 265px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 160px;
+    margin-bottom: 107px;
   }
 
   .form-page__zigzag {
     height: 28px;
-    top: 11%;
+    bottom: 0;
   }
 }

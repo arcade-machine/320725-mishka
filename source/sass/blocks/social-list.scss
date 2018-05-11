@@ -14,10 +14,6 @@
   top: 7px;
   left: -2px;
 
-  &:hover {
-    fill: #46c1ae;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -40,6 +36,10 @@
   width: 30px;
   height: 30px;
   align-items: flex-start;
+
+  &:hover .social-list__icon {
+    fill: #46c1ae;
+  }
 }
 
 @media (min-width: $tablet) {

@@ -1,5 +1,6 @@
 .custom {
   width: 81%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -16,6 +17,7 @@
 @media (min-width: $tablet) {
   .custom {
     width: 100%;
+    max-width: none;
     box-sizing: border-box;
   }
 

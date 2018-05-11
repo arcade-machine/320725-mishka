@@ -33,9 +33,13 @@
   .catalog-page__head {
     padding-top: 93px;
     padding-bottom: 80px;
-    margin-bottom: 46px;
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .catalog-page__top {
+    position: relative;
+    margin-bottom: 46px;
   }
 
   .catalog-page__zigzag {
@@ -43,7 +47,7 @@
     position: absolute;
     width: 104%;
     height: 18px;
-    top: 9.5%;
+    bottom: 0;
     left: -15px;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 100%;
@@ -55,7 +59,12 @@
   .catalog-page__head {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 140px;
+    padding-bottom: 113px;
+  }
+
+  .catalog-page__top {
+    position: relative;
+    margin-bottom: 84px;
   }
 
   .catalog-page {
@@ -66,6 +75,6 @@
 
   .catalog-page__zigzag {
     height: 28px;
-    top: 13%;
+    bottom: 0;
   }
 }

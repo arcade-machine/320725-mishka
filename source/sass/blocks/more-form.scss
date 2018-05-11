@@ -35,6 +35,11 @@
   max-height: 540px;
   border: 2px solid #000000;
   resize: vertical;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  outline: none;
 
   &:hover {
     border: 2px solid #62d1ba;
@@ -77,6 +82,8 @@
 
   .more-form__textarea {
     padding: 13px;
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .more-form__textarea::placeholder {

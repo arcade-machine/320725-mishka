@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div class="container">
     <header class="header">
       <a class="header__logo" href="index.html">
         <picture>
@@ -54,8 +55,10 @@
       </nav>
     </header>
     <main class="catalog-page">
-      <h1 class="catalog-page__head">Каталог товаров</h1>
-      <span class="catalog-page__zigzag"></span>
+      <div class="catalog-page__top">
+        <h1 class="catalog-page__head">Каталог товаров</h1>
+        <span class="catalog-page__zigzag"></span>
+      </div>
       <section class="catalog-page__items catalog">
         <ul class="catalog__list">
           <li class="catalog__item catalog-item">
@@ -206,5 +209,6 @@
     </section>
   <script src="js/script.js"></script>
   <script src="js/picturefill.js"></script>
+  </div>
   </body>
 </html>

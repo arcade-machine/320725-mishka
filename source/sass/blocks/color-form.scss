@@ -133,7 +133,7 @@
 
   .color-form__item {
     box-sizing: border-box;
-    width: 210px;
+    width: 42%;
     font-size: 19px;
     line-height: 18px;
     margin-bottom: 35px;
@@ -159,6 +159,7 @@
   }
 
   .color-form__item {
+    width: 25%;
     margin-right: 52px;
 
     &:nth-child(2n) {

@@ -1,5 +1,6 @@
 .video {
   width: 81%;
+  max-width: 350px;
   margin: 0 auto;
   padding-top: 22px;
   padding-bottom: 35px;
@@ -49,7 +50,7 @@
 .video__image {
   display: block;
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 27px;
   z-index: 1;
@@ -122,7 +123,8 @@
 
   .video {
     width: 88%;
-    margin-bottom: 0;
+    max-width: 820px;
+    margin-bottom: 8px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -177,11 +179,14 @@
 @media (min-width: $desktop) {
   .video {
     width: 91%;
-    margin: 0 auto;
-    margin-bottom: 75px;
+    max-width: 1300px;
+    margin-bottom: 68px;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 0;
     box-sizing: border-box;
     display: block;
+    border: 1px solid #ededed;
 
     &::after {
       content: "";
@@ -205,9 +210,10 @@
   .video__header {
     width: 35%;
     padding-left: 77px;
-    padding-top: 103px;
+    padding-top: 95px;
     float: right;
     box-sizing: border-box;
+    border: none;
   }
 
   .video__head {
@@ -229,6 +235,7 @@
     padding-right: 57px;
     padding-bottom: 52px;
     box-sizing: border-box;
+    border: none;
   }
 
   .video__image {

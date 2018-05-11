@@ -35,8 +35,13 @@
   border: none;
   border-bottom: 2px solid #000000;
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 14px;
   padding-bottom: 17px;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  outline: none;
 
   &:focus {
     border-bottom: 2px solid #62d1ba;
@@ -106,6 +111,10 @@
 
   .email-form__input {
     padding-left: 15px;
+    padding-top: 9px;
+    padding-bottom: 14px;
+    font-size: 19px;
+    line-height: 18px;
 
     &::placeholder {
       font-size: 19px;
