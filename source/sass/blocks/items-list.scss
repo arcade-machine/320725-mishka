@@ -6,8 +6,18 @@
 }
 
 .items-list__image {
+  width: 100%;
+  min-height: 315px;
   margin: 0 auto;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 260px auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url("../img/triple-set-mobile@2x.jpg");
+  }
 }
 
 .items-list__price {
@@ -68,10 +78,18 @@
   .items-list__image {
     margin: 0;
     padding: 0;
+    width: 43.5%;
+    min-height: 404px;
     position: absolute;
     display: block;
-    right: 50px;
-    top: 153px;
+    left: 50%;
+    top: 25%;
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+    background-size: 334px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url("../img/triple-set-tablet@2x.jpg");
+    }
   }
 
   .items-list__about {
@@ -113,6 +131,7 @@
 
   .items-list__about {
     margin-bottom: 46px;
+    width: 100%;
   }
 
   .items-list__spec {
@@ -124,8 +143,16 @@
   }
 
   .items-list__image {
+    width: 45.7%;
+    min-height: 636px;
     top: 71px;
-    left: 576px;
+    right: 0;
     z-index: -1;
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    background-size: 525px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url("../img/triple-set-desktop@2x.jpg");
+    }
   }
 }

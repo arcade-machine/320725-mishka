@@ -36,10 +36,11 @@
 
 .featured__zig-zag {
   position: absolute;
-  width: 120%;
-  height: 6px;
+  width: 110%;
+  height: 15px;
   bottom: 0;
   left: -30px;
+  background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-line.svg");
   background-size: 100%;
   overflow: hidden;
@@ -66,7 +67,7 @@
   }
 
   .featured__wrapper {
-    display: flex;
+    display: block;
     margin-bottom: 48px;
     width: 100%;
   }
@@ -83,7 +84,7 @@
   }
 
   .featured__zig-zag {
-    height: 17px;
+    height: 25px;
   }
 }
 
@@ -115,7 +116,7 @@
   }
 
   .featured__zig-zag {
-    height: 27px;
+    height: 48px;
     overflow: hidden;
   }
 }

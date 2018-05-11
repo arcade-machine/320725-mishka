@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div class="container">
     <header class="header">
       <a class="header__logo">
         <picture>
@@ -107,19 +108,11 @@
             </td>
           </tr>
         </table>
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/triple-set-desktop@1x.webp 1x, img/webp/triple-set-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/triple-set-tablet@1x.webp 1x, img/webp/triple-set-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/triple-set-mobile@1x.webp 1x, img/webp/triple-set-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x,">
-          <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x,">
-          <img class="items-list__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
-        </picture>
+        <div class="items-list__image"></div>
         <p class="items-list__price">Цена: 990 руб.</p>
         <a href="#" class="button items-list__button modal">Заказать</a>
-        <span class="featured__zig-zag"></span>
       </div>
+      <span class="featured__zig-zag"></span>
       </section>
       <section class="about-us">
         <h2 class="about-us__header">Коротко о нас:</h2>
@@ -180,16 +173,8 @@
           <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/webp/map-desktop@1x.webp 1x, img/webp/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/webp/map-tablet@1x.webp 1x, img/webp/map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/webp/map-mobile@1x.webp 1x, img/webp/map-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-          <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин товаров ручных работ 'Мишка'">
-        </picture>
+        <div class="contacts__map">
+          <iframe class="contacts__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6127239655718!2d30.323028852519922!3d59.93873626156395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1525963665094" frameborder="0" style="border:0" allowfullscreen></iframe>
           <svg class="contacts__icon" width="67" height="100"><use xlink:href="img/svg-sprite.svg#icon-contacts"></use></svg>
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
@@ -246,5 +231,6 @@
     </main>
     <script src="js/script.js"></script>
     <script src="js/picturefill.js"></script>
+  </div>
   </body>
 </html>
