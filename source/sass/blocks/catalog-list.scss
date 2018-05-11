@@ -42,10 +42,12 @@
   background-color: #63d1bb;
 
   &:hover {
+    z-index: 2;
     border-bottom: 5px solid #63d1bb;
   }
 
   &:active {
+    z-index: 2;
     border-bottom: 5px solid #63d1bb;
   }
 }
@@ -54,10 +56,12 @@
   background-color: #56c3b2;
 
   &:hover {
+    z-index: 2;
     border-bottom: 5px solid #56c3b2;
   }
 
   &:active {
+    z-index: 2;
     border-bottom: 5px solid #56c3b2;
   }
 }

@@ -102,6 +102,7 @@ var sizeLengthCache = {};
 var DPR = window.devicePixelRatio;
 var units = {
 px: 1,
+"in": 96
 };
 var anchor = document.createElement( "a" );
 
@@ -553,7 +554,6 @@ pos += 1;
 
 while (true) {
 collectCharacters(regexLeadingCommasOrSpaces);
-
 if (pos >= inputLength) {
 return candidates; // (we're done, this is the sole return path)
 }

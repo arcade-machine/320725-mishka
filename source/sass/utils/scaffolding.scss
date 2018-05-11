@@ -33,22 +33,7 @@ body {
 }
 
 .container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.header-container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.middle-container {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -65,42 +50,7 @@ body {
 }
 
 @media (min-width: $tablet) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  .header-container {
-    position: relative;
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
-
-  .middle-container {
-    width: 768px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: $desktop) {
-  .container {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  .header-container {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
-
-  .middle-container {
-    width: 1150px;
-    margin: 0 auto;
-  }
 }

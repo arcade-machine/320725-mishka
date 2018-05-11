@@ -44,9 +44,10 @@
 
 .little-info__item {
   position: relative;
-  width: 100%;
+  max-width: 260px;
   min-height: 106px;
   padding-top: 34px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -63,6 +64,7 @@
 
   .little-info__item {
     width: 50%;
+    max-width: none;
     margin-bottom: 37px;
 
     &:nth-child(1) {

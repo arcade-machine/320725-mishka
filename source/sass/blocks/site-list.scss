@@ -24,12 +24,11 @@
 .site-list__item {
   margin: 0 auto;
   padding: 0;
-  padding-left: 24%;
   padding-top: 30px;
   padding-bottom: 30px;
   min-height: 80px;
+  min-width: 182px;
   box-sizing: border-box;
-  width: 81%;
 }
 
 .site-list__link {
@@ -75,6 +74,7 @@
     background-color: transparent;
     border: none;
     height: 30px;
+    min-width: 0;
     width: 50%;
   }
 
