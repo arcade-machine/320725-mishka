@@ -8,6 +8,7 @@
 .html-academy__head {
   display: block;
   margin: 0;
+  margin-right: 30px;
   padding: 0;
   padding-bottom: 30px;
   font-family: "open-sans_bold", "Arial", sans-serif;
@@ -15,7 +16,6 @@
   font-size: 19px;
   line-height: 18px;
   color: #000000;
-  margin-right: 30px;
   border: none;
   position: relative;
 }
@@ -29,9 +29,9 @@
 
 .html-academy__link {
   position: relative;
+  margin: 0 auto;
   display: block;
   text-decoration: none;
-  margin: 0 auto;
 
   &:hover .html-academy__icon {
     fill: #46c1ae;
@@ -44,9 +44,9 @@
 
 @media (min-width: $tablet) {
   .html-academy {
+    margin-left: auto;
     padding: 0;
     padding-bottom: 0;
-    margin-left: auto;
   }
 
   .html-academy__head {

@@ -5,8 +5,8 @@
 
 .review__header {
   margin: 0;
-  padding: 0;
   margin-bottom: 24px;
+  padding: 0;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -16,8 +16,8 @@
 
 .review__info {
   margin: 0;
-  padding: 0;
   margin-bottom: 27px;
+  padding: 0;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -26,8 +26,8 @@
 
 .review__from {
   margin: 0;
-  padding: 0;
   margin-bottom: 32px;
+  padding: 0;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -70,10 +70,10 @@
   }
 
   .review__header {
+    width: 50%;
+    margin-bottom: 50px;
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 50px;
-    width: 50%;
   }
 
   .review__image {
@@ -85,11 +85,11 @@
   }
 
   .review__write-us {
-    position: absolute;
-    right: 0;
     width: auto;
     padding-left: 40px;
     padding-right: 40px;
+    position: absolute;
+    right: 0;
   }
 
   .review__from {

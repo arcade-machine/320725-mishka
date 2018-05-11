@@ -6,14 +6,14 @@
 
 .form-page__head {
   min-height: 175px;
-  box-sizing: border-box;
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 70px;
   padding-bottom: 65px;
-  margin-bottom: 22px;
+  box-sizing: border-box;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 27px;
@@ -34,10 +34,10 @@
 
   .form-page__head {
     min-height: 225px;
-    font-size: 43px;
-    line-height: 50px;
     margin-bottom: 71px;
     padding-top: 91px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .form-page__top {
@@ -45,10 +45,10 @@
   }
 
   .form-page__zigzag {
-    display: block;
-    position: absolute;
     width: 104%;
     height: 18px;
+    display: block;
+    position: absolute;
     bottom: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 100%;
@@ -63,11 +63,11 @@
   }
 
   .form-page__head {
-    padding-top: 92px;
     min-height: 265px;
+    margin-bottom: 107px;
+    padding-top: 92px;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 107px;
   }
 
   .form-page__zigzag {

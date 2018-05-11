@@ -26,11 +26,11 @@
 }
 
 .modal-cart__header {
+  margin: 0;
   padding: 0;
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 35px;
-  margin: 0;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -41,11 +41,11 @@
 }
 
 .modal-cart__type {
+  margin: 0;
   padding: 0;
   padding-left: 25%;
   padding-right: 25%;
   padding-top: 15px;
-  margin: 0;
   font-family: "open-sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -79,11 +79,11 @@
 }
 
 .modal-cart__item {
-  display: block;
   width: 32%;
-  padding-top: 16px;
   min-height: 51px;
   margin-right: 3%;
+  padding-top: 16px;
+  display: block;
   text-align: center;
   border: 2px solid #ececec;
   box-sizing: border-box;
@@ -122,20 +122,20 @@
 
 .modal-cart__close {
   display: block;
-  position: absolute;
-  background-color: transparent;
-  border: none;
   width: 23px;
   height: 23px;
+  position: absolute;
   top: 24%;
   right: 5%;
+  background-color: transparent;
+  border: none;
   z-index: 3;
 
   &::before {
     content: "";
-    position: absolute;
     width: 23px;
     height: 23px;
+    position: absolute;
     top: 0;
     left: 0;
     background-image: url("../img/icon-menu-close.svg");
@@ -145,9 +145,9 @@
 
 @media (min-width: $tablet) {
   .modal-cart__open {
-    margin-left: 14%;
     width: 74%;
     height: 43%;
+    margin-left: 14%;
     border: 2px solid #c7c7c7;
   }
 
@@ -156,10 +156,10 @@
   }
 
   .modal-cart__header {
-    font-size: 30px;
-    line-height: 57px;
     padding-left: 0;
     padding-right: 0;
+    font-size: 30px;
+    line-height: 57px;
   }
 
   .modal-cart__type {
@@ -186,9 +186,9 @@
 
 @media (min-width: $desktop) {
   .modal-cart__open {
-    margin-left: 26%;
     width: 50%;
     height: 43%;
+    margin-left: 26%;
   }
 
   .modal-cart__close {

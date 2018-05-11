@@ -1,8 +1,8 @@
 .featured {
-  position: relative;
   width: 100%;
   padding-top: 27px;
   padding-bottom: 41px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -35,9 +35,9 @@
 }
 
 .featured__zig-zag {
-  position: absolute;
   width: 110%;
   height: 15px;
+  position: absolute;
   bottom: 0;
   left: -30px;
   background-repeat: repeat-x;
@@ -59,28 +59,28 @@
   }
 
   .featured__header {
+    margin: 0;
     padding-left: 6%;
     padding-right: 6%;
     font-size: 43px;
     line-height: 50px;
-    margin: 0;
   }
 
   .featured__wrapper {
-    display: block;
-    margin-bottom: 48px;
     width: 100%;
+    margin-bottom: 48px;
+    display: block;
   }
 
   .featured__type {
-    position: absolute;
     width: 100px;
-    font-size: 17px;
-    line-height: 17px;
+    margin: 0;
+    position: absolute;
     right: -10px;
     top: 58px;
+    font-size: 17px;
+    line-height: 17px;
     text-align: center;
-    margin: 0;
   }
 
   .featured__zig-zag {
@@ -104,10 +104,10 @@
   }
 
   .featured__header {
+    margin-bottom: 50px;
+    padding-left: 9%;
     font-size: 53px;
     line-height: 57px;
-    padding-left: 9%;
-    margin-bottom: 50px;
   }
 
   .featured__type {

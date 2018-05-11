@@ -1,9 +1,9 @@
 .contacts {
   width: 100%;
   margin: 0 auto;
-  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -29,10 +29,10 @@
 
 .contacts__about-us {
   max-width: 382px;
-  padding-left: 9%;
-  padding-right: 7%;
   margin: 0 auto;
   margin-bottom: 38px;
+  padding-left: 9%;
+  padding-right: 7%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -76,12 +76,12 @@
   }
 
   &::before {
-    position: absolute;
     content: "";
-    top: 30px;
-    left: 0;
     width: 100%;
     height: 1px;
+    position: absolute;
+    top: 30px;
+    left: 0;
     background-color: #62d1ba;
   }
 }
@@ -89,22 +89,22 @@
 .contacts__map {
   width: 100%;
   min-height: 457px;
-  position: relative;
   margin-bottom: 34px;
+  position: relative;
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 322px auto;
   background-position: 50% 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/map-mobile@@2x.jpg");
+    background-image: url("../img/map-mobile@2x.jpg");
   }
 }
 
 .contacts__google {
-  position: relative;
   width: 100%;
   height: 457px;
+  position: relative;
   z-index: 2;
 }
 
@@ -125,17 +125,17 @@
 }
 
 .contacts__button {
-  display: inline-block;
+  max-width: 82%;
   margin-left: 9%;
   margin-right: 9%;
+  display: inline-block;
   box-sizing: border-box;
-  max-width: 82%;
 }
 
 .contacts__zig-zag {
-  position: absolute;
   width: 110%;
   height: 15px;
+  position: absolute;
   top: 0;
   left: -30px;
   background-repeat: repeat-x;
@@ -167,13 +167,13 @@
 
   .contacts__header {
     max-width: none;
-    font-size: 43px;
-    line-height: 50px;
     margin: 0;
     margin-bottom: 49px;
     padding: 0;
     padding-left: 6%;
     padding-right: 6%;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .contacts__email {
@@ -185,6 +185,8 @@
   }
 
   .contacts__about-us {
+    max-width: none;
+    width: 100%;
     margin: 0;
     margin-bottom: 56px;
     padding: 0;
@@ -192,8 +194,6 @@
     padding-right: 6.5%;
     flex-direction: row;
     font-size: 17px;
-    max-width: none;
-    width: 100%;
   }
 
   .contacts__value {
@@ -217,11 +217,11 @@
   }
 
   .contacts__button {
-    display: inline-block;
-    margin: 0 auto;
     width: auto;
+    margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
+    display: inline-block;
   }
 
   .contacts__icon {
@@ -236,13 +236,13 @@
 
 @media (min-width: $desktop) {
   .contacts {
+    width: 100%;
     margin: 0;
     padding: 0;
-    position: relative;
-    width: 100%;
     padding-left: 19%;
     padding-top: 150px;
     padding-bottom: 105px;
+    position: relative;
     flex-direction: column;
     box-sizing: border-box;
   }
@@ -254,10 +254,10 @@
   }
 
   .contacts__header {
+    margin-bottom: 48px;
+    padding: 0;
     font-size: 53px;
     line-height: 57px;
-    padding: 0;
-    margin-bottom: 48px;
   }
 
   .contacts__email {
@@ -282,15 +282,15 @@
   }
 
   .contacts__about-us {
-    padding: 0;
-    padding-left: 6px;
     width: 37%;
     margin-bottom: 80px;
+    padding: 0;
+    padding-left: 6px;
   }
 
   .contacts__map {
-    position: absolute;
     width: 45.7%;
+    position: absolute;
     right: 4%;
     top: 13%;
     background-image: url("../img/map-desktop@1x.jpg");
