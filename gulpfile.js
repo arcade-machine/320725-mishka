@@ -78,7 +78,7 @@ gulp.task("serve", ["style"], function() {
 
 gulp.task("build", function (done) {
   run ("clean", "copy", "style", "sprite", "html", done);
-}
+});
 
 gulp.task("copy", function () {
   return gulp.src([
