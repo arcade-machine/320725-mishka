@@ -90,10 +90,11 @@
     height: 18px;
     display: block;
     position: absolute;
-    bottom: 2px;
-    left: -28px;
+    bottom: -2px;
+    left: -38px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 100%;
+    background-size: 770px 26px;
+    background-repeat: repeat-x;
   }
 }
 
@@ -127,7 +128,9 @@
   }
 
   .main-page__zigzag {
-    height: 42px;
-    bottom: -18px;
+    width: 110%;
+    height: 30px;
+    bottom: -2px;
+    z-index: 1;
   }
 }

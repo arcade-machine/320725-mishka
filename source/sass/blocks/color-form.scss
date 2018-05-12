@@ -89,6 +89,10 @@
   background-repeat: no-repeat;
 }
 
+.color-form__input:focus ~ .color-form__control {
+  border: 2px solid #62d1ba;
+}
+
 @media (min-width: $tablet) {
   .color-form {
     margin-bottom: 58px;

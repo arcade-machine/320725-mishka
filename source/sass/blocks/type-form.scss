@@ -83,6 +83,10 @@
   border-radius: 50%;
 }
 
+.type-form__radio:focus ~ .type-form__control {
+  border: 2px solid #62d1ba;
+}
+
 @media (min-width: $tablet) {
   .type-form {
     margin-bottom: 50px;

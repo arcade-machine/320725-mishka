@@ -50,13 +50,15 @@
     bottom: 0;
     left: -15px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 100%;
+    background-size: 770px 26px;
     overflow: hidden;
+    background-repeat: repeat-x;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog-page__head {
+    padding-top: 91px;
     padding-bottom: 113px;
     font-size: 53px;
     line-height: 57px;
@@ -68,13 +70,16 @@
   }
 
   .catalog-page {
+    margin-bottom: -2px;
     position: relative;
     top: -38px;
     z-index: 1;
   }
 
   .catalog-page__zigzag {
-    height: 28px;
-    bottom: 0;
+    width: 110%;
+    height: 30px;
+    bottom: -8px;
+    background-size: 1150px 34px;
   }
 }

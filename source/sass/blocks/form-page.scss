@@ -51,8 +51,9 @@
     position: absolute;
     bottom: 0;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 100%;
+    background-size: 770px 26px;
     overflow: hidden;
+    background-repeat: repeat-x;
   }
 }
 
@@ -71,7 +72,9 @@
   }
 
   .form-page__zigzag {
-    height: 28px;
-    bottom: 0;
+    width: 110%;
+    height: 30px;
+    bottom: -8px;
+    background-size: 1150px 34px;
   }
 }

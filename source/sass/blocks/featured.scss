@@ -36,20 +36,20 @@
 
 .featured__zig-zag {
   width: 110%;
-  height: 15px;
+  height: 16px;
   position: absolute;
   bottom: 0;
   left: -30px;
-  background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100%;
+  background-size: 329px 26px;
+  background-repeat: repeat-x;
   overflow: hidden;
 }
 
 @media (min-width: $tablet) {
   .featured {
     width: 100%;
-    padding-top: 47px;
+    padding-top: 42px;
     padding-bottom: 50px;
 
     &::after {
@@ -77,21 +77,22 @@
     margin: 0;
     position: absolute;
     right: -10px;
-    top: 58px;
+    top: 53px;
     font-size: 17px;
     line-height: 17px;
     text-align: center;
   }
 
   .featured__zig-zag {
-    height: 25px;
+    height: 27px;
+    background-size: 771px 38px;
   }
 }
 
 @media (min-width: $desktop) {
   .featured {
     width: 100%;
-    padding-top: 123px;
+    padding-top: 119px;
     padding-bottom: 85px;
     padding-left: 14%;
     box-sizing: border-box;
@@ -116,7 +117,9 @@
   }
 
   .featured__zig-zag {
+    width: 91%;
+    left: 5%;
     height: 48px;
-    overflow: hidden;
+    background-size: 1150px 45px;
   }
 }

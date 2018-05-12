@@ -110,8 +110,9 @@
 
 .contacts__icon {
   position: absolute;
-  top: 32%;
-  left: 43%;
+  left: 52%;
+  top: 44%;
+  transform: translate(-52%, -44%);
 }
 
 .contacts__email {
@@ -134,13 +135,13 @@
 
 .contacts__zig-zag {
   width: 110%;
-  height: 15px;
+  height: 16px;
   position: absolute;
-  top: 0;
+  top: -12px;
   left: -30px;
-  background-repeat: repeat-x;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 100%;
+  background-size: 329px 26px;
+  background-repeat: repeat-x;
   overflow: hidden;
 }
 
@@ -224,13 +225,9 @@
     display: inline-block;
   }
 
-  .contacts__icon {
-    top: 26.5%;
-    left: 47%;
-  }
-
   .contacts__zig-zag {
-    height: 25px;
+    height: 27px;
+    background-size: 771px 38px;
   }
 }
 
@@ -302,6 +299,9 @@
   }
 
   .contacts__zig-zag {
+    width: 91%;
+    left: 5%;
     height: 48px;
+    background-size: 1150px 45px;
   }
 }
