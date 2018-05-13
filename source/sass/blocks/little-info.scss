@@ -96,6 +96,10 @@
 @media (min-width: $desktop) {
   .little-info {
     width: 700px;
-    margin-bottom: 108px;
+    margin-bottom: 109px;
+  }
+
+  .little-info__item {
+    padding-top: 33px;
   }
 }
