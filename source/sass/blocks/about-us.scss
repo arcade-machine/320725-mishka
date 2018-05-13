@@ -39,14 +39,16 @@
 
 @media (min-width: $desktop) {
   .about-us {
-    width: 91.3%;
+    width: 92.3%;
     padding-left: 15.5%;
-    padding-bottom: 100px;
+    padding-bottom: 86px;
+    padding-top: 61px;
     box-sizing: border-box;
   }
 
   .about-us__header {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 51px;
   }
 }

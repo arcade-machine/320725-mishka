@@ -106,6 +106,7 @@
   height: 457px;
   position: relative;
   z-index: 2;
+  border: 0;
 }
 
 .contacts__icon {
@@ -140,7 +141,7 @@
   top: -12px;
   left: -30px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 329px 26px;
+  background-size: 329px 10px;
   background-repeat: repeat-x;
   overflow: hidden;
 }
@@ -227,7 +228,8 @@
 
   .contacts__zig-zag {
     height: 27px;
-    background-size: 771px 38px;
+    top: -3px;
+    background-size: 771px 20px;
   }
 }
 
@@ -237,7 +239,7 @@
     margin: 0;
     padding: 0;
     padding-left: 19%;
-    padding-top: 150px;
+    padding-top: 163px;
     padding-bottom: 105px;
     position: relative;
     flex-direction: column;
@@ -246,8 +248,8 @@
 
   .contacts__flag {
     display: block;
-    top: 140px;
-    left: 110px;
+    top: 155px;
+    left: 112px;
   }
 
   .contacts__header {
@@ -266,7 +268,7 @@
   }
 
   .contacts__value {
-    padding-left: 3px;
+    padding-left: 1px;
   }
 
   .contacts__field {
@@ -275,7 +277,7 @@
 
   .contacts__button {
     margin: 0;
-    margin-right: 74%;
+    margin-right: 74.6%;
   }
 
   .contacts__about-us {
@@ -288,8 +290,8 @@
   .contacts__map {
     width: 45.7%;
     position: absolute;
-    right: 4%;
-    top: 13%;
+    right: 4.5%;
+    top: 14%;
     background-image: url("../img/map-desktop@1x.jpg");
     background-size: 525px auto;
 
@@ -300,8 +302,9 @@
 
   .contacts__zig-zag {
     width: 91%;
-    left: 5%;
     height: 48px;
-    background-size: 1150px 45px;
+    left: 5%;
+    top: -2px;
+    background-size: 1150px 25px;
   }
 }

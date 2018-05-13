@@ -41,7 +41,7 @@
   bottom: 0;
   left: -30px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 329px 26px;
+  background-size: 329px 10px;
   background-repeat: repeat-x;
   overflow: hidden;
 }
@@ -85,7 +85,7 @@
 
   .featured__zig-zag {
     height: 27px;
-    background-size: 771px 38px;
+    background-size: 771px 20px;
   }
 }
 
@@ -93,7 +93,7 @@
   .featured {
     width: 100%;
     padding-top: 119px;
-    padding-bottom: 85px;
+    padding-bottom: 94px;
     padding-left: 14%;
     box-sizing: border-box;
   }
@@ -112,14 +112,15 @@
   }
 
   .featured__type {
-    top: 140px;
+    top: 135px;
     left: -27px;
   }
 
   .featured__zig-zag {
     width: 91%;
     left: 5%;
+    bottom: -15px;
     height: 48px;
-    background-size: 1150px 45px;
+    background-size: 1150px 25px;
   }
 }

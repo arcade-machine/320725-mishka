@@ -24,12 +24,14 @@
 
 .form-page__zigzag {
   display: none;
+  overflow: hidden;
 }
 
 @media (min-width: $tablet) {
   .form-page {
-    margin-top: -45px;
-    padding-bottom: 49px;
+    top: -45px;
+    padding-bottom: 4px;
+    overflow: hidden;
   }
 
   .form-page__head {
@@ -38,6 +40,7 @@
     padding-top: 91px;
     font-size: 43px;
     line-height: 50px;
+    overflow: hidden;
   }
 
   .form-page__top {
@@ -45,7 +48,7 @@
   }
 
   .form-page__zigzag {
-    width: 104%;
+    width: 100%;
     height: 18px;
     display: block;
     position: absolute;
@@ -59,8 +62,8 @@
 
 @media (min-width: $desktop) {
   .form-page {
-    margin-top: -38px;
-    padding-bottom: 50px;
+    top: -38px;
+    padding-bottom: 14px;
   }
 
   .form-page__head {
@@ -72,9 +75,10 @@
   }
 
   .form-page__zigzag {
-    width: 110%;
+    width: 100%;
     height: 30px;
     bottom: -8px;
     background-size: 1150px 34px;
+    overflow: hidden;
   }
 }

@@ -34,6 +34,7 @@ body {
 
 .container {
   min-width: 320px;
+  overflow: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active) {
