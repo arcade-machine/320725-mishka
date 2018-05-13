@@ -58,7 +58,7 @@
       display: none;
     }
 
-    .main-navigation__options {
+    & .main-navigation__options {
       display: none;
     }
 
@@ -72,6 +72,20 @@
   }
 
   .main-navigation--nojs {
+    & .main-navigation__list {
+      display: flex;
+      width: 100%;
+    }
+
+    & .main-navigation__user-block {
+      display: flex;
+      width: 100%;
+    }
+
+    & .main-navigation__options {
+      display: none;
+    }
+
     & .main-navigation__close {
       display: none;
     }
