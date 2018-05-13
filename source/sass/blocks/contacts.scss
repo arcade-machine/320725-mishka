@@ -140,7 +140,7 @@
   top: -12px;
   left: -30px;
   background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 329px 26px;
+  background-size: 329px 10px;
   background-repeat: repeat-x;
   overflow: hidden;
 }
@@ -227,7 +227,8 @@
 
   .contacts__zig-zag {
     height: 27px;
-    background-size: 771px 38px;
+    top: -3px;
+    background-size: 771px 20px;
   }
 }
 
@@ -302,7 +303,7 @@
     width: 91%;
     height: 48px;
     left: 5%;
-    top: -10px;
-    background-size: 1150px 45px;
+    top: -2px;
+    background-size: 1150px 25px;
   }
 }
