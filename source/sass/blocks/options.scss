@@ -1,8 +1,8 @@
 .options {
-  display: none;
-  list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
+  list-style: none;
   z-index: 2;
 }
 
@@ -50,13 +50,13 @@
 
 @media (min-width: $desktop) {
   .options {
+    width: 100%;
     margin: 0;
     padding: 0;
     padding-top: 15px;
     font-size: 15px;
     line-height: 24px;
     display: flex;
-    width: 100%;
   }
 
   .options__item:not(:last-child) {
@@ -64,7 +64,7 @@
   }
 
   .options__item {
-    margin-right: 60px;
+    margin-right: 62px;
 
     &--delivery {
       align-self: baseline;

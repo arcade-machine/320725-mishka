@@ -1,15 +1,17 @@
 .featured {
-  position: relative;
-  width: 81%;
+  width: 100%;
   padding-top: 27px;
   padding-bottom: 41px;
-  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .featured__header {
   margin: 0;
-  padding: 0;
   margin-bottom: 6px;
+  padding: 0;
+  padding-left: 9.5%;
+  padding-right: 9.5%;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
@@ -19,6 +21,8 @@
 .featured__type {
   margin: 0;
   padding: 0;
+  padding-left: 9.5%;
+  padding-right: 9.5%;
   margin-bottom: 22px;
   display: inline-block;
   vertical-align: top;
@@ -30,60 +34,92 @@
   color: #63d1bb;
 }
 
+.featured__zig-zag {
+  width: 110%;
+  height: 16px;
+  position: absolute;
+  bottom: 0;
+  left: -30px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: 329px 26px;
+  background-repeat: repeat-x;
+  overflow: hidden;
+}
+
 @media (min-width: $tablet) {
   .featured {
-    width: 87%;
-    padding-top: 47px;
+    width: 100%;
+    padding-top: 42px;
     padding-bottom: 50px;
+
+    &::after {
+      left: -53px;
+      width: 115%;
+    }
   }
 
   .featured__header {
+    margin: 0;
+    padding-left: 6%;
+    padding-right: 6%;
     font-size: 43px;
     line-height: 50px;
-    margin: 0;
   }
 
   .featured__wrapper {
-    display: flex;
-    margin-bottom: 48px;
     width: 100%;
+    margin-bottom: 48px;
+    display: block;
   }
 
   .featured__type {
-    position: absolute;
     width: 100px;
+    margin: 0;
+    position: absolute;
+    right: -10px;
+    top: 53px;
     font-size: 17px;
     line-height: 17px;
-    right: 14px;
-    top: 58px;
     text-align: center;
-    margin: 0;
+  }
+
+  .featured__zig-zag {
+    height: 27px;
+    background-size: 771px 38px;
   }
 }
 
 @media (min-width: $desktop) {
   .featured {
-    width: 91.3%;
-    padding-top: 123px;
+    width: 100%;
+    padding-top: 119px;
     padding-bottom: 85px;
-    padding-left: 15%;
+    padding-left: 14%;
     box-sizing: border-box;
   }
 
   .featured__wrapper {
-    width: 61%;
+    width: 64%;
     margin: 0;
     padding: 0;
   }
 
   .featured__header {
+    margin-bottom: 50px;
+    padding-left: 9%;
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 50px;
   }
 
   .featured__type {
     top: 140px;
-    left: 32px;
+    left: -27px;
+  }
+
+  .featured__zig-zag {
+    width: 91%;
+    left: 5%;
+    height: 48px;
+    background-size: 1150px 45px;
   }
 }

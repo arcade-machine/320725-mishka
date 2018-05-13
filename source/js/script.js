@@ -1,6 +1,12 @@
 var navMain = document.querySelector('.main-navigation');
 var navOpen = document.querySelector('.main-navigation__toggle');
 var navClose = document.querySelector('.main-navigation__close');
+var open = document.querySelector('.modal');
+var open1 = document.querySelector('.modal-1');
+var open2 = document.querySelector('.modal-2');
+var popup = document.querySelector('.modal-cart');
+var close = document.querySelector('.modal-cart__close');
+
 
 navMain.classList.remove('main-navigation--nojs');
 
@@ -24,4 +30,31 @@ navClose.addEventListener('click', function(evt) {
     navMain.classList.add('main-navigation--closed');
     navMain.classList.remove('main-navigation--opened');
   }
+});
+
+open.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.add('modal-cart__show');
+});
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-cart__show')
+});
+
+open1.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.add('modal-cart__show');
+});
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-cart__show')
+});
+
+open2.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.add('modal-cart__show');
+});
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-cart__show')
 });

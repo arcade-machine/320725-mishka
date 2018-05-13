@@ -43,26 +43,28 @@
 }
 
 .little-info__item {
-  position: relative;
-  width: 100%;
+  max-width: 260px;
   min-height: 106px;
+  margin: 0 auto;
   padding-top: 34px;
+  position: relative;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet) {
   .little-info {
     width: 100%;
+    margin-bottom: 102px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 102px;
   }
 
   .little-info__item {
     width: 50%;
+    max-width: none;
     margin-bottom: 37px;
 
     &:nth-child(1) {

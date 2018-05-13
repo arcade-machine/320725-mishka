@@ -9,7 +9,11 @@
   <body>
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Магазин товаров ручных работ 'Мишка'">
+        </picture>
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button"></button>
@@ -50,7 +54,10 @@
       </nav>
     </header>
     <main class="form-page">
-      <h1 class="form-page__head">Вязание на заказ</h1>
+      <div class="form-page__top">
+        <h1 class="form-page__head">Вязание на заказ</h1>
+        <span class="form-page__zigzag"></span>
+      </div>
       <section class="custom">
         <h2 class="visually-hidden">Составление заявки на вязание</h2>
         <p class="custom__top">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -147,7 +154,7 @@
     </main>
       <footer class="main-footer">
         <a class="main-footer__logo" href="index.html">
-          <svg width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'"><use xlink:href="img/svg-sprite.svg#footer-logo"></use></svg>
+          <svg width="100" height="50" alt="Магазин товаров ручных работ 'Мишка'"><use xlink:href="img/svg-sprite.svg#footer-logo"></use></svg>
         </a>
         <div class="main-footer__social social-list">
           <a href="#" class="social-list__item">
@@ -171,6 +178,5 @@
           </a>
         </div>
       </footer>
-  <script src="js/script.js"></script>
   </body>
 </html>

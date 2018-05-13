@@ -1,3 +1,205 @@
 .modal-cart {
   display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.modal-cart__open {
+  width: 100%;
+  height: 55%;
+  padding-bottom: 17%;
+  position: fixed;
+  top: 20%;
+  box-sizing: border-box;
+  z-index: 2;
+  background-color: #ffffff;
+  border-top: 2px solid #c7c7c7;
+  box-shadow: 0 7px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-cart__show {
+  display: block;
+}
+
+.modal-cart__header {
+  margin: 0;
+  padding: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 35px;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.modal-cart__type {
+  margin: 0;
+  padding: 0;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 15px;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.modal-cart__controls {
+  width: 100%;
+  padding-left: 9.5%;
+  padding-right: 9.5%;
+  padding-bottom: 30px;
+  display: flex;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.modal {
+  cursor: pointer;
+}
+
+.modal-1 {
+  cursor: pointer;
+}
+
+.modal-2 {
+  cursor: pointer;
+}
+
+.modal-cart__radio {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+.modal-cart__radio:checked .modal-cart__item {
+  border: 2px solid #62d1ba;
+}
+
+.modal-cart__item {
+  width: 32%;
+  min-height: 51px;
+  margin-right: 3%;
+  padding-top: 16px;
+  display: block;
+  text-align: center;
+  border: 2px solid #ececec;
+  box-sizing: border-box;
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+
+  &:hover {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.modal-cart__form {
+  padding-top: 15px;
+  background-color: #ffffff;
+}
+
+.modal-cart .button {
+  width: 82%;
+  margin-left: 9%;
+  margin-right: 9%;
+  background-color: #62d1ba;
+  border: 2px solid #62d1ba;
+  color: #ffffff;
+
+  &:hover {
+    border: 2px solid transparent;
+  }
+}
+
+.modal-cart__close {
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 24%;
+  right: 5%;
+  background-color: transparent;
+  border: none;
+  z-index: 3;
+
+  &::before {
+    content: "";
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet) {
+  .modal-cart__open {
+    width: 74%;
+    height: 43%;
+    margin-left: 14%;
+    border: 2px solid #c7c7c7;
+  }
+
+  .modal-cart__close {
+    right: 15%;
+  }
+
+  .modal-cart__header {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-cart__type {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal-cart .button {
+    width: 64%;
+    margin-left: 18%;
+    margin-right: 18%;
+  }
+
+  .modal-cart__controls {
+    padding-left: 18.5%;
+    padding-right: 18.5%;
+  }
+
+  .modal-cart__item {
+    font-size: 17px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .modal-cart__open {
+    width: 50%;
+    height: 43%;
+    margin-left: 26%;
+  }
+
+  .modal-cart__close {
+    right: 26%;
+  }
 }

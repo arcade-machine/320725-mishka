@@ -14,10 +14,6 @@
   top: 7px;
   left: -2px;
 
-  &:hover {
-    fill: #46c1ae;
-  }
-
   &:active {
     opacity: 0.3;
   }
@@ -33,21 +29,25 @@
 }
 
 .social-list__item {
-  position: relative;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
   width: 30px;
   height: 30px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
   align-items: flex-start;
+
+  &:hover .social-list__icon {
+    fill: #46c1ae;
+  }
 }
 
 @media (min-width: $tablet) {
   .social-list {
     width: 22%;
-    border: none;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
+    border: none;
   }
 
   .social-list__icon {
@@ -62,8 +62,8 @@
 @media (min-width: $desktop) {
   .social-list {
     width: 14%;
-    border: none;
-    padding: 0;
     margin: 0 auto;
+    padding: 0;
+    border: none;
   }
 }

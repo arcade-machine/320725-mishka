@@ -1,5 +1,6 @@
 .custom {
   width: 81%;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -16,24 +17,25 @@
 @media (min-width: $tablet) {
   .custom {
     width: 100%;
+    max-width: none;
     box-sizing: border-box;
   }
 
   .custom__top {
+    margin-bottom: 72px;
     padding-left: 6.5%;
     padding-right: 6.5%;
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 72px;
   }
 }
 
 @media (min-width: $desktop) {
   .custom__top {
-    font-size: 17px;
-    line-height: 30px;
     margin-bottom: 72px;
     padding-left: 19.5%;
     padding-right: 19.5%;
+    font-size: 17px;
+    line-height: 30px;
   }
 }

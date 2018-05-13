@@ -20,6 +20,10 @@ $desktop: 1150px;
 
 $mobile-only: 767px;
 
+$retina-dpi: 144dpi;
+
+$retina-dppx: 1.5dppx;
+
 body {
   margin: 0;
   padding: 0;
@@ -29,22 +33,7 @@ body {
 }
 
 .container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0 30px;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.header-container {
-  width: 320px;
-  margin: 0 auto;
-}
-
-.middle-container {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -58,45 +47,4 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media (min-width: $tablet) {
-  .container {
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  .header-container {
-    position: relative;
-    width: 768px;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
-
-  .middle-container {
-    width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop) {
-  .container {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
-
-  .header-container {
-    width: 1150px;
-    margin: 0 auto;
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
-
-  .middle-container {
-    width: 1150px;
-    margin: 0 auto;
-  }
 }

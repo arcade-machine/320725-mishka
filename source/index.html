@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <div class="container">
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo-mobile.svg" alt="Магазин товаров ручных работ 'Мишка'">
+        </picture>
       </a>
       <nav class="main-navigation main-navigation--closed main-navigation--nojs">
         <button class="main-navigation__toggle" type="button"></button>
@@ -67,6 +72,7 @@
             </a>
           </li>
         </ul>
+        <span class="main-page__zigzag"></span>
       </div>
       <section class="featured">
         <h2 class="visually-hidden">Популярные товары</h2>
@@ -102,10 +108,11 @@
             </td>
           </tr>
         </table>
-        <img class="items-list__image" width="260" height="315" src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки">
+        <div class="items-list__image"></div>
         <p class="items-list__price">Цена: 990 руб.</p>
-        <a href="#" class="button items-list__button">Заказать</a>
+        <a href="#" class="button items-list__button modal">Заказать</a>
       </div>
+      <span class="featured__zig-zag"></span>
       </section>
       <section class="about-us">
         <h2 class="about-us__header">Коротко о нас:</h2>
@@ -137,7 +144,10 @@
         </ul>
         <div class="about-us__review review">
           <h2 class="review__header">Отзывы</h2>
-          <img class="review__image" alt="Отзывы" src="img/review@1x.jpg" width="350" height="457">
+          <picture>
+            <source type="image/webp" srcset="img/webp/review@1x.webp 1x, img/webp/review@2x.webp 2x">
+            <img class="review__image" alt="Отзывы" src="img/review@1x.jpg" srcset="img/review@2x.jpg 2x">
+          </picture>
           <p class="review__info">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
           <p class="review__from">
             Анастасия Красильникова <span class="review__user">@misssssiskras</span>
@@ -150,6 +160,7 @@
         </div>
       </section>
       <section class="contacts">
+        <span class="contacts__zig-zag"></span>
         <h2 class="contacts__header">Контакты</h2>
         <svg class="contacts__flag" width="48" height="82"><use xlink:href="img/svg-sprite.svg#icon-flag"></use></svg>
         <div class="contacts__about-us">
@@ -162,15 +173,15 @@
           <p class="contacts__value">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__wrapper">
-        <img class="contacts__map" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Магазин товаров ручных работ 'Мишка'">
+        <div class="contacts__map">
+          <iframe class="contacts__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6127239655718!2d30.323028852519922!3d59.93873626156395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1525963665094" frameborder="0" style="border:0" allowfullscreen></iframe>
           <svg class="contacts__icon" width="67" height="100"><use xlink:href="img/svg-sprite.svg#icon-contacts"></use></svg>
         </div>
         <a class="contacts__button button" href="#">Напишите нам</a>
       </section>
       <footer class="main-footer">
         <a class="main-footer__logo">
-          <svg width="86" height="36" alt="Магазин товаров ручных работ 'Мишка'"><use xlink:href="img/svg-sprite.svg#footer-logo"></use></svg>
+          <svg width="100" height="50" alt="Магазин товаров ручных работ 'Мишка'"><use xlink:href="img/svg-sprite.svg#footer-logo"></use></svg>
         </a>
         <div class="main-footer__social social-list">
           <a href="#" class="social-list__item">
@@ -194,21 +205,32 @@
         </div>
       </footer>
       <section class="modal-cart">
+        <button class="modal-cart__close" type="button"></button>
+        <div class="modal-cart__open">
         <h3 class="modal-cart__header">Добавить в корзину</h3>
         <p class="modal-cart__type">Выберите размер:</p>
-        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form form">
-          <input type="radio" class="visually-hidden" id="S-size" name="cart" value="S">
-          <input type="radio" class="visually-hidden" id="M-size" name="cart" value="M">
-          <input type="radio" class="visually-hidden" id="L-size" name="cart" value="L">
-          <div class="form-controls">
-            <label class="form-controls__item form-controls__item--S" for="S-size">S</label>
-            <label class="form-controls__item form-controls__item--M" for="M-size">M</label>
-            <label class="form-controls__item form-controls__item--L" for="L-size">L</label>
+        <form action="https://echo.htmlacademy.ru/" class="modal-cart__form">
+          <div class="modal-cart__controls">
+            <label class="modal-cart__item modal-cart__item--S" for="S-size">
+              <input type="radio" class="modal-cart__radio" id="S-size" name="cart" value="S" checked>
+              S
+            </label>
+            <label class="modal-cart__item modal-cart__item--M" for="M-size">
+              <input type="radio" class="modal-cart__radio" id="M-size" name="cart" value="M">
+              M
+            </label>
+            <label class="modal-cart__item modal-cart__item--L" for="L-size">
+              <input type="radio" class="modal-cart__radio" id="L-size" name="cart" value="L">
+              L
+            </label>
           </div>
           <button type="submit" class="button modal-cart__button">Добавить</button>
         </form>
+        </div>
       </section>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
+  </div>
   </body>
 </html>

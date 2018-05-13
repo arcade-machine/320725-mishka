@@ -1,14 +1,14 @@
 .email-form {
-  position: relative;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  position: relative;
   border: none;
 
   &::before {
     content: "";
-    position: absolute;
-    height: 1px;
     width: 69%;
+    height: 1px;
+    position: absolute;
     top: 8px;
     right: 0;
     background-color: #62d1ba;
@@ -17,8 +17,8 @@
 
 .email-form__head {
   margin: 0;
-  padding: 0;
   margin-bottom: 8px;
+  padding: 0;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -31,12 +31,17 @@
   width: 100%;
   min-height: 40px;
   margin-bottom: 33px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
   box-sizing: border-box;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #444444;
+  outline: none;
 
   &:focus {
     border-bottom: 2px solid #62d1ba;
@@ -52,9 +57,9 @@
 }
 
 .email-form__wrapper {
-  position: relative;
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .email-form__icon {
@@ -75,10 +80,10 @@
 
 @media (min-width: $tablet) {
   .email-form {
-    position: relative;
-    background-color: #f1f1f1;
     padding-left: 28.5%;
     padding-right: 6.5%;
+    position: relative;
+    background-color: #f1f1f1;
     box-sizing: border-box;
 
     &::before {
@@ -106,6 +111,10 @@
 
   .email-form__input {
     padding-left: 15px;
+    padding-top: 9px;
+    padding-bottom: 14px;
+    font-size: 19px;
+    line-height: 18px;
 
     &::placeholder {
       font-size: 19px;

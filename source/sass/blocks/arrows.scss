@@ -4,11 +4,11 @@
 }
 
 .arrows__item {
+  width: 50%;
+  height: 50px;
   position: relative;
   border: 1px solid #ececec;
   background-color: transparent;
-  height: 50px;
-  width: 50%;
   cursor: pointer;
 
   &:hover {
@@ -20,23 +20,23 @@
   }
 
   &--arrow-back::before {
+    width: 51px;
+    height: 27px;
     position: absolute;
     content: "";
     top: 10px;
-    left: 38px;
-    width: 51px;
-    height: 27px;
+    left: 30%;
     background-image: url("../img/icon-left-arrow.svg");
     background-repeat: no-repeat;
   }
 
   &--arrow-forward::before {
+    width: 51px;
+    height: 27px;
     position: absolute;
     content: "";
     top: 10px;
-    left: 38px;
-    width: 51px;
-    height: 27px;
+    right: 30%;
     background-image: url("../img/icon-right-arrow.svg");
     background-repeat: no-repeat;
   }
