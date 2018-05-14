@@ -6,6 +6,19 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+
+  &::before {
+    content: "";
+    width: 110%;
+    height: 16px;
+    position: absolute;
+    top: -12px;
+    left: -30px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 329px 10px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+  }
 }
 
 .contacts__flag {
@@ -134,18 +147,6 @@
   box-sizing: border-box;
 }
 
-.contacts__zig-zag {
-  width: 110%;
-  height: 16px;
-  position: absolute;
-  top: -12px;
-  left: -30px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-size: 329px 10px;
-  background-repeat: repeat-x;
-  overflow: hidden;
-}
-
 @media (min-width: $tablet) {
   .contacts {
     width: 100%;
@@ -154,6 +155,12 @@
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+
+    &::before {
+      height: 27px;
+      top: -3px;
+      background-size: 771px 20px;
+    }
   }
 
   .contacts__flag {
@@ -225,12 +232,6 @@
     padding-right: 40px;
     display: inline-block;
   }
-
-  .contacts__zig-zag {
-    height: 27px;
-    top: -3px;
-    background-size: 771px 20px;
-  }
 }
 
 @media (min-width: $desktop) {
@@ -244,6 +245,14 @@
     position: relative;
     flex-direction: column;
     box-sizing: border-box;
+
+    &::before {
+      width: 91%;
+      height: 48px;
+      left: 5%;
+      top: -2px;
+      background-size: 1150px 25px;
+    }
   }
 
   .contacts__flag {
@@ -298,13 +307,5 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-desktop@2x.jpg");
     }
-  }
-
-  .contacts__zig-zag {
-    width: 91%;
-    height: 48px;
-    left: 5%;
-    top: -2px;
-    background-size: 1150px 25px;
   }
 }

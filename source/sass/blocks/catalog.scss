@@ -28,6 +28,10 @@
 
   .catalog__item {
     margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

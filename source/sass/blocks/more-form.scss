@@ -1,30 +1,22 @@
 .more-form {
   padding: 0;
+  padding-top: 26px;
   margin: 0;
   border: none;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 77%;
-    top: 8px;
-    right: 0;
-    background-color: #62d1ba;
-  }
+  border-top: 1px solid #62d1ba;
 }
 
 .more-form__head {
   margin: 0;
-  margin-bottom: 25px;
   padding: 0;
+  padding-right: 20px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+  background-color: white;
 }
 
 .more-form__textarea {
@@ -63,9 +55,10 @@
     padding-left: 28.5%;
     padding-right: 6.5%;
     padding-top: 68px;
-    padding-bottom: 52px;
+    padding-bottom: 50px;
     position: relative;
     box-sizing: border-box;
+    border: none;
 
     &::before {
       display: none;

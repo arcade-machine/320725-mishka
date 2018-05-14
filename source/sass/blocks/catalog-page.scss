@@ -45,19 +45,20 @@
   .catalog-page__top {
     position: relative;
     margin-bottom: 46px;
-  }
 
-  .catalog-page__zigzag {
-    width: 104%;
-    height: 18px;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: -15px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-size: 770px 26px;
-    overflow: hidden;
-    background-repeat: repeat-x;
+    &::after {
+      content: "";
+      width: 104%;
+      height: 18px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 770px 26px;
+      overflow: hidden;
+      background-repeat: repeat-x;
+    }
   }
 }
 
@@ -72,6 +73,13 @@
   .catalog-page__top {
     position: relative;
     margin-bottom: 84px;
+
+    &::after {
+      width: 110%;
+      height: 30px;
+      bottom: -8px;
+      background-size: 1150px 34px;
+    }
   }
 
   .catalog-page {
@@ -79,12 +87,5 @@
     position: relative;
     top: -38px;
     z-index: 1;
-  }
-
-  .catalog-page__zigzag {
-    width: 110%;
-    height: 30px;
-    bottom: -8px;
-    background-size: 1150px 34px;
   }
 }

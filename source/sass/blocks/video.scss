@@ -117,7 +117,7 @@
   }
 
   .video__info {
-    margin-bottom: 34px;
+    margin-bottom: 36px;
     font-family: "open-sans", "Arial", sans-serif;
     font-size: 15px;
     line-height: 30px;
@@ -158,7 +158,7 @@
     padding: 0;
     padding-left: 5.5%;
     padding-right: 5.5%;
-    padding-top: 30px;
+    padding-top: 32px;
     border-top: 1px solid #ededed;
     border-left: 1px solid #ededed;
     border-right: 1px solid #ededed;
@@ -170,6 +170,7 @@
     padding-left: 71px;
     font-size: 20px;
     line-height: 24px;
+    max-width: none;
 
     &::before {
       top: 35px;

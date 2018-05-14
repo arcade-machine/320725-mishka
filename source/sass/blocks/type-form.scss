@@ -6,26 +6,19 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
-
-  &::before {
-    content: "";
-    width: 77%;
-    height: 1px;
-    position: absolute;
-    top: 8px;
-    right: 0;
-    background-color: #62d1ba;
-  }
+  border-top: 1px solid #62d1ba;
 }
 
 .type-form__head {
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   font-family: "open-sans_bold", "Arial", sans-serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
   color: #63d1bb;
+  background-color: white;
   text-transform: uppercase;
 }
 
@@ -92,10 +85,7 @@
     margin-bottom: 50px;
     padding: 0;
     position: relative;
-
-    &::before {
-      display: none;
-    }
+    border: none;
   }
 
   .type-form__controls {
