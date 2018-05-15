@@ -9,15 +9,16 @@
 
   &::before {
     content: "";
-    width: 110%;
-    height: 16px;
+    width: 100%;
+    height: 10px;
     position: absolute;
-    top: -12px;
-    left: -30px;
+    top: -3px;
+    left: 0;
     background-image: url("../img/bg-zigzag-line.svg");
-    background-size: 329px 10px;
+    background-size: 320px 10px;
     background-repeat: repeat-x;
     overflow: hidden;
+    transform: scaleY(-1);
   }
 }
 
@@ -151,21 +152,21 @@
   .contacts {
     width: 100%;
     padding-bottom: 60px;
-    padding-top: 70px;
+    padding-top: 84px;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
 
     &::before {
-      height: 27px;
-      top: -3px;
-      background-size: 771px 20px;
+      height: 30px;
+      top: 0;
+      background-size: 768px 30px;
     }
   }
 
   .contacts__flag {
     display: block;
-    top: 55px;
+    top: 68px;
     right: 52px;
   }
 
@@ -247,11 +248,11 @@
     box-sizing: border-box;
 
     &::before {
-      width: 91%;
-      height: 48px;
-      left: 5%;
-      top: -2px;
-      background-size: 1150px 25px;
+      width: 92%;
+      height: 23px;
+      left: 4%;
+      top: 0;
+      background-size: 1054px 25px;
     }
   }
 
