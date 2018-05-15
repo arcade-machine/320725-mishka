@@ -1,8 +1,5 @@
-// Общие стили
-
 @import "utils/scaffolding.scss";
 
-// Блоки
 @import "blocks/header.scss",
   "blocks/user-block.scss",
   "blocks/main-navigation.scss",
@@ -15,7 +12,6 @@
   "blocks/social-list.scss",
   "blocks/html-academy.scss";
 
-//index
 @import "blocks/main-page.scss",
   "blocks/catalog-list.scss",
   "blocks/featured.scss",
@@ -25,13 +21,11 @@
   "blocks/review.scss",
   "blocks/contacts.scss";
 
-//catalog
 @import "blocks/catalog-page.scss",
   "blocks/catalog.scss",
   "blocks/catalog-item.scss",
   "blocks/video.scss";
 
-//form-page
 @import "blocks/form-page.scss",
   "blocks/custom.scss",
   "blocks/custom-making.scss",
